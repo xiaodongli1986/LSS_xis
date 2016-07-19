@@ -440,13 +440,13 @@ def omws_from_om_w(oms, ws, TwoDlist=True):
 
 ### very specialized cosmological functions
 
-execfile(pythonlibPATH+'/stdA_cosmo.py')
+from stdA_cosmo import *
 
 ############################################################
 ### Arrays
 ############################################################
 
-execfile(pythonlibPATH+'/stdA_array.py')
+from stdA_array import *
 
 ############################################################
 ### Files, strings
@@ -614,7 +614,7 @@ def get_stat_from_list(x,getvarer = False):
 
 ### Advanced statistics
 
-execfile(pythonlibPATH+'/stdA_stat.py')
+from stdA_stat import *
 
 ############################################################
 ### Plottings
