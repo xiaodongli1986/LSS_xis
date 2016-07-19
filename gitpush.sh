@@ -8,5 +8,6 @@ git add 105thick/*.py
 git add 105thick/*.sh
 git add README.md
 git add plottings/*.*
+git add src/*.py
 git commit -m 'updates'
 git push
