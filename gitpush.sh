@@ -1,6 +1,7 @@
 git pull
 git add *.tar.gz
 git add papers/*.pdf
+git add chisqs/*.*
 git add *.py
 git add *.ipynb
 git add *.sh
