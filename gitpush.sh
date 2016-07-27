@@ -1,5 +1,6 @@
 git pull
-git add *.pdf
+git add *.tar.gz
+git add papers/*.pdf
 git add *.py
 git add *.ipynb
 git add *.sh
