@@ -13,5 +13,11 @@ git add plottings/*.*
 git add plottings/*/*.*
 git add src/*.py
 git add src/*.ipynb
+
+git add draft/BOSSAP/*.*
+git add draft/gal2pcf/*.*
+git add draft/*.tex
+git add draft/*.eps
+
 git commit -m 'updates'
 git push
