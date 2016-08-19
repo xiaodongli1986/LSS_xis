@@ -12,6 +12,7 @@ git add README.md
 git add plottings/*.*
 git add plottings/*/*.*
 git add src/*.py
+git add src/fig*.eps
 git add src/*.ipynb
 
 git add draft/BOSSAP/*.*

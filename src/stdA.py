@@ -31,6 +31,7 @@ Seconds_per_day = S1D = 3600*24# how many
 
 
 PCA = PLOT_COLOR_ARRAY = ['k','b','c','g','m','r', 'y', 'gray']
+PCA2 = PLOT_COLOR_ARRAY_2 = ['k','b','c','g','m','r']
 PSA = PLOT_STYLE_ARRAY = ['-', '--', '-.', '..']
 MA = MARKER_ARRAY = ['o', 'p', 's',  'D',  '^', '*', 'v', '1', '2', '3', '4']
 NUM_PLOT_COLOR = len(PLOT_COLOR_ARRAY)
