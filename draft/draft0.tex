@@ -81,8 +81,8 @@
 %% one line. However, you may use \\ to force a line break if
 %% you desire.
 
-\title{Cosmological constraints from the redshift dependence of the distance rescaling in wrong cosmologies: 
-the shape of galaxy 2-point correlation function}
+\title{Cosmological constraints from the redshift dependence of scaling in wrong cosmologies: 
+the shape of galaxy 2-point correlation function {\bf XD: Which word shall I use? mis-scaling? geometric scaling? ...}}
 
 
 %\author{Xiao-Dong~Li\altaffilmark{1}, Changbom~Park\altaffilmark{1}, J.~E.~Forero-Romero\altaffilmark{2} and Juhan Kim%\altaffilmark{3}}
@@ -223,14 +223,7 @@ In *** we further propose to use the shape of xi(s) to probe the volume effect..
 Stretch or compression shifts the clustering properties in some particular scale to larger or smaller scales...
 The shape of measured xi(s) is thus stretched or compressed.
 
-
-
-
 The outline of this paper is as follows. 
-
-%{\bf AMTB: Please chose one kind of tense of verbs. It changes from sentences to sentences!}
-%{\bf AMTB: How many mock BOSS samples are made from HR4?}
-
 
 This paper is organized as follows...
 The outline of this paper proceeds as follows. 
@@ -240,38 +233,39 @@ In \S 4, we describe our new analysis method for quantifying the redshift depend
 We conclude in \S 5.
 
 
-\section{AP and Volume Effect in Wrongly Assumed Cosmologies}
+\section{Volume Effect}
 \label{sec:Voleffect}
 
 \begin{figure*}
    \centering{
-%   \includegraphics[height=6cm]{Tpcf--xy.eps}
-%   \includegraphics[height=6cm]{Tpcf--quan.eps}
-   %\includegraphics[height=7cm]{FVol.eps}
-   %\includegraphics[height=8cm]{xy.eps}
-   %\includegraphics[height=8cm]{smu.eps}
+   \includegraphics[height=8cm]{fig1_a.eps}
+   \includegraphics[height=8cm]{fig1_b.eps}
    }
-   \caption{\label{fig_xy}
+   \caption{\label{fig_xyquan}
    %Apparent distortion of objects in four wrongly assumed cosmologies, assuming a true cosmology of .
-   The redshift dependence of AP and volume effect in two wrongly assumed cosmologies $\Omega_m=0.41$, $w=-1.3$ and $\Omega_m=0.11$, $w=-0.7$,
+   The scaling in four wrongly assumed cosmologies ..., % $\Omega_m=0.41$, $w=-1.3$ and $\Omega_m=0.11$, $w=-0.7$, 
    assuming a true cosmology of $\Omega_m=0.26$, $w=-1$.
-   Upper panel shows the apparent distortion of four perfect squares,
-   measured by an observer located at the origin.
-   The apparently distorted shapes are plotted in red solid lines.
-   The underlying true shapes are plotted in blue dashed lines.
-   Lower panel shows the evolution of Equations (\ref{eq:stretch}) and (\ref{eq:volume}).
-   In our mock surveys we split the samples at $z=0.3$, 0.6, 0.9 and 1.2, as marked by the vertical lines.
+   Left panel shows a series of circular objects, measured by an observer located at the origin.
+   Their true positions and shapes are plotted in blue dashed lines.
+   The observer measures the redshifts of these objects, adopts the wrong cosmologies to compute the distance,
+   and obtains wrong results (the red solid lines).
+   %The red solid lines show their positions and shapes when the wrong cosmologies 
+   % are assumed to compute distance from measured redshift.
+   %The misestimation of angular diameter distance lead to wrong 
+   Right panel shows the misestimation of angular diameter distance when the wrong cosmologies are adopted.
+   %In our mock surveys we split the samples at $z=0.3$, 0.6, 0.9 and 1.2, as marked by the vertical lines.
    %measured by an observer located at the origin.
    %For reference, blue dashed squares show their shapes and positions in the true cosmology.
    }
+   % Need a better plot to show angular size variation!!!
 \end{figure*}
 
 %Considering we are Let us consider an object in the universe with certain size and shape.
 %Its observed redshift span $\Delta z$ and angular size $\Delta \theta$ are related with the comoving sizes by
-In this section we briefly introduce the AP and volume effect in wrongly assumed cosmologies.
-A more detailed description of the AP effect has been provided in \cite{Li2014}.
+In this section we briefly introduce the scaling effect in wrongly assumed cosmologies.
+A more detailed description has been provided in \cite{Li2014,Li2015,Li2016}.
 
-Suppose that we are probing the shape and volume of an object in the Universe.
+Suppose that we are probing the shape of some objects in the Universe.
 We measure its redshift span $\Delta z$ and angular size $\Delta \theta$,
 then compute its sizes in the radial and transverse directions from the relations of 
 \begin{equation}\label{eq:distance}
@@ -289,29 +283,37 @@ $H_0$ is the present value of Hubble parameter and $r(z)$ is the comoving distan
 In case we adopted a wrong set of cosmological parameters in Equation (\ref{eq:distance},\ref{eq:HDA}),
 the inferred $\Delta r_{\parallel}$ and $\Delta r_{\bot}$ are wrong,
 resulting in distorted shape (AP effect) and wrongly estimated volume (volume effect).
-The degree of variations in shape and volume can be described by the following quantities
-\begin{equation}\label{eq:stretch}
+These effects have been discussed in \cite{Li2014,Li2015,Li2016}.
+This paper we focus on the scaling of angular size,
+which can be described by the following quantities
+%\begin{equation}\label{eq:stretch}
  %{\rm Degree\ of\ LOS\ stretch\equiv}
  %{\rm rat}_{\rm LOS\ stretch}\equiv
- \frac{[\Delta r_{\parallel}/\Delta r_{\perp}]_{\rm wrong}}{[\Delta r_{\parallel}/\Delta r_{\perp}]_{\rm true}} =
-  \frac{[D_A(z)H(z)]_{\rm true}}{[D_A(z)H(z)]_{\rm wrong}} 
-\end{equation}
-\begin{equation}\label{eq:volume}
+% \frac{[\Delta r_{\parallel}/\Delta r_{\perp}]_{\rm wrong}}{[\Delta r_{\parallel}/\Delta r_{\perp}]_{\rm true}} =
+%  \frac{[D_A(z)H(z)]_{\rm true}}{[D_A(z)H(z)]_{\rm wrong}} 
+%\end{equation}
+%\begin{equation}\label{eq:volume}
+% %{\rm Degree\ of\ volume\ magnification \equiv}
+% %{\rm rat}_{\rm volume\ mag}\equiv
+% \frac{[\Delta r_{\parallel}(\Delta r_{\perp})^{2}]_{\rm wrong}}{[\Delta r_{\parallel}(\Delta r_{\perp})^{2}]_{\rm true}}
+% = \frac{{\rm Volume}_{\rm wrong}}{{\rm Volume}_{\rm true}}
+% = \frac{[D_A(z)^2/H(z)]_{\rm wrong}}{[D_A(z)^2 / H(z)]_{\rm true}},
+%\end{equation}
+\begin{equation}\label{eq:DA}
  %{\rm Degree\ of\ volume\ magnification \equiv}
  %{\rm rat}_{\rm volume\ mag}\equiv
- \frac{[\Delta r_{\parallel}(\Delta r_{\perp})^{2}]_{\rm wrong}}{[\Delta r_{\parallel}(\Delta r_{\perp})^{2}]_{\rm true}}
- = \frac{{\rm Volume}_{\rm wrong}}{{\rm Volume}_{\rm true}}
- = \frac{[D_A(z)^2/H(z)]_{\rm wrong}}{[D_A(z)^2 / H(z)]_{\rm true}},
+ \frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}
+ = \frac{D_{A, \rm wrong}}{D_{A, \rm true}},
 \end{equation}
-where ``true'' and ``wrong'' denote the values of quantities in the true cosmology and wrongly assumed cosmology.
-From the AP and volume effects, we can constrain  $D_A(z)H(z)$ and $D_A(z)^2 / H(z)$, respectively.
+where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology and wrongly assumed cosmology.
+%From the above effects, we can constrain $D_A(z)H(z)$, $D_A(z)^2 / H(z)$ and $D_A(z)$, respectively.
 
-The AP and volume effect due to wrongly assumed cosmological parameters are shown in the upper panel of Figure \ref{fig_xy}.
+The effects due to wrongly assumed cosmological parameters are shown in the upper panel of Figure \ref{fig_xy}.
 Suppose that the true cosmology is a flat $\Lambda$CDM with present density parameter $\Omega_m=0.26$
 and standard dark energy EoS $w=-1$.
-If we were to distribute four perfect squares at various distances from 500 Mpc/h to 3,000 Mpc/h,
+If we were to distribute a series of perfect circles at various distances from 500 Mpc/h to ???? Mpc/h,
 and an observer located at the origin were to measure their redshifts and compute their positions and shapes 
-using redshift-distance relations of two incorrect cosmologies:
+using redshift-distance relations of ??? incorrect cosmologies:
 \begin{enumerate}
  \item $\Omega_m=0.41$, $w=-1.3$,
  \item $\Omega_m=0.11$, $w=-0.7$,
@@ -321,6 +323,7 @@ and their volumes are changed (volume effect).
 In the cosmological model (ii) with $\Omega_m=0.11$, $w=-0.7$, we see a stretch of the shape in the line of sight (LOS) direction (hereafter ``LOS shape stretch'')
 and magnification of the volume (hereafter ``volume magnification''), 
 while in the model with $\Omega_m=0.41$, $w=-1.3$, we see opposite effects of LOS shape compression and volume shrinkage.
+
 
 In the lower panel of Figure \ref{fig_xy}, we plot the degree of variations in shape and volume as functions of redshift. 
 In cosmology (i), both quantities have values less than 1, 
@@ -489,35 +492,6 @@ To mitigate this systematic uncertainty we rely on the shape of $\xi_{\Delta s}(
 \end{equation}
 We impose a cut $\mu<\mu_{\rm max}$ to reduce the fiber collision and FOG effects which are stronger toward the LOS ($\mu\rightarrow1$) direction.
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=16cm]{fig6.eps}
-   }
-   \caption{\label{fig_datamock}
-   %Apparent distortion of objects in four wrongly assumed cosmologies, assuming a true cosmology of .
-   $\hat\xi_{\Delta s}(\mu)$ measured from BOSS DR12 CMASS NGC sample 
-    (consists of $\approx 565\,000$ galaxies at $0.15 < z < 0.693$)
-    and one realization from the HR4 N-body simulation, in the WMAP5 cosmology.
-   The lower panel shows the difference between the results of observational data and mock galaxies.
-   $\hat\xi_{\Delta s}(\mu)$ are obtained by integrating $\xi (s,\mu)$ within the range {\rm 6\ $h^{-1}$Mpc}$\leq s\leq${\rm 40\ $h^{-1}$Mpc} 
-      and normalizing the amplitude, 
-    i.e., Eq. (\ref{eq:xideltas}) and Eq. (\ref{eq:norm}).
-   To produce a clear view of the FOG effect, we split the angular range of $0.01\leq \mu \leq 1$ into as many as 40 bins.
-   Using the HR4 mock galaxies, the enhancement near $\theta=0^\circ$ caused by the FOG effect
-    and the tilt of the shape in $20^\circ\lesssim\theta\lesssim90^\circ$ 
-    as a result of the large-scale flow,
-    are all very well reproduced.
-%    Thw lo
-   This verifies the ability of our galaxies assignment method \citep{hong2016} 
-    to reproduce the properties of galaxy distributions from large scale surveys.
-   %Conversely, the HR3 PSB halo mock can not 
-   %reproduce the shape of $\hat\xi_{\Delta s}(\mu)$.
-   We use the HR4 mock galaxies to correct the systematics effects produced by the RSD.
-   %The 72 sets of PSB mocks from HR3 are used to compute covariance.
-   %measured by an observer located at the origin.
-   %For reference, blue dashed squares show their shapes and positions in the true cosmology.
-   }
-\end{figure*}
 
 
 The clustering properties may be affected by various properties of the galaxy sample, 
@@ -547,26 +521,6 @@ that our mocks galaxies are more massive than those in the observations.
 %Conversely, the HR3 PSB halo galaxies do not accurately reproduce the observations.
 We use the HR4 galaxy mocks to correct the systematics.
 %The HR3 PSB mock galaxies are used to estimate the covariance of 2pCF since 72 mock survey samples are available.
-
-\begin{figure*}
-   \centering{
-   %\includegraphics[width=16cm]{fig7.eps}
-   %\includegraphics[height=9cm]{Tpcf-sys.eps}
-   }
-   \caption{\label{fig_sys}
-   %Apparent distortion of objects in four wrongly assumed cosmologies, assuming a true cosmology of .
-   Systematics in $\delta \hat \xi_{\Delta s}$, measured from the HR4 mock galaxy samples.
-   The redshift evolution of RSD effect and properties of samples can lead to non-zero values of $\delta \hat\xi_{\Delta s}(z_i,z_1)$.
-   For the 1st to 5th redshift bins, $\delta\hat\xi_{\Delta s, \rm sys}(z_i,z_1)\lesssim0.02$,
-    indicating a small redshift evolution of the RSD effect and properties of galaxies.
-   For the 6th redshift bin, the values of $\delta\hat\xi_{\Delta s, \rm sys}(z_6,z_1)$ are relatively large,
-   because galaxies in that highest redshift bin are significantly more massive than those at lower redshifts.
-   % so the measured $\hat\xi_{\Delta s}(\mu)$ has larger (smaller) values at $\mu\rightarrow1$ ($\mu\rightarrow0$) 
-   % compared with the others.
-   See Sec. \ref{sec:syscor} for details.
-   %The values are estimated from the HR4 mock galaxies. % and subtract its contribution.
-   }
-\end{figure*}
 
 
 %It is impossible to probe $\hat\xi_{\Delta s}(\mu)$ as a continuous function with infinite degrees of freedom. 
@@ -686,23 +640,6 @@ which is already a minor effect in our analysis.
 %the statistical uncertainty of this method could be much smaller,
 %and modeling the RSD effect in a cosmological dependent manner would be necessary.
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=14cm]{fig8.eps}
-   %\includegraphics[width=14cm]{Tpcf--contour.eps}
-   }
-   \caption{
-    \label{fig_2pcf_masscut} 
-    $\hat \xi_{\Delta s}(\mu)$ measured from a small HR4 mock galaxy sample with different minimal mass cuts.
-    The mock galaxies are taken from the $z=0$ snapshot data within the radius $r<600$ $h^{-1}$Mpc.
-    Only small variations of $\hat\xi_{\Delta s}(\mu)$ are produced when changing the minimal mass cuts.
-    Higher mass cuts result in larger (smaller) $\hat\xi_{\Delta s}(\mu)$ at $\mu\rightarrow1$ ($\mu\rightarrow0$).
-    Considering the large variation of mass cuts, the variation of $\hat\xi_{\Delta s}(\mu)$ is not significant.
-   }
-      %The redshift density distribution of the BOSS DR12 galaxy samples, assuming a $\Lambda$CDM cosmology with $\Omega_m=0.31$.
-      %The blue and green solid histograms show the distribution of LOWZ and CMASS galaxies respectively. 
-      %The vertical dashed lines define the 6 redshift bins that are used to cut the samples.   }
-\end{figure*}
 
 2) The selection effect, i.e., the evolution of galaxy bias with redshifts, 
 can introduce redshift evolution in the clustering properties of the observed galaxies.
@@ -802,32 +739,36 @@ ${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock ga
 %   \includegraphics[width=18cm]{fig9_1.eps}
 %   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
 %    \includegraphics[height=8cm]{smu.eps}
+    \includegraphics[width=18cm]{fig2.eps}
    }
-   \caption{\label{fig_TpCF}
-   Upper panels: $\hat \xi_{\Delta s}(\mu)$ measured for the BOSS DR12 galaxies,
-   which are divided into six redshift bins.
-   Measurements from the three bins in LOWZ are indicated in solid lines, 
-   while those from CMASS are the dashed lines.
-   We present the measurements in three cosmologies,
-   the $\Omega_m=0.31$ $\Lambda$CDM (left), the $\Omega_m=0.1$ $\Lambda$CDM (middle),
-   and a cosmology with $\Omega_m=0.31$, $w=-2.5$ (right).   
-   %We adopt $s_{\rm min}=6$ $h^{-1}$Mpc and $s_{\rm max}=40$ $h^{-1}$Mpc for the integral over the scale of 2pCF.
-   The angular dependence of 2pCF is measured in 10 bins within the range $0.01\leq1-\mu\leq1$.
-   In the middle and right panels, the redshift dependence of AP distortions leads to clear redshift evolution of $\hat \xi_{\Delta s}(\mu)$.
-   Lower panels: The redshift evolution of the $\hat\xi_{\Delta s}$ after systematics correction,  
-   $\delta\hat \xi_{\Delta s}(z_i,z_1)-\delta\hat \xi_{\Delta s,\rm sys}(z_i,z_1)$
-   (for details of their definitions, see Eq. (\ref{eq:deltahatxi}) and Sec. \ref{sec:syscor}).
-   For clarity we combine the curves of $z_2$ and $z_3$, which fluctuate
-   due to the relatively small sample sizes.
-   The statistical significance is indicated by the 1$\sigma$ error bars of $\delta\hat \xi_{\Delta s}(z_6,z_1)-\delta\hat \xi_{\Delta s,\rm sys}(z_6,z_1)$.
-   The curves are statistically consistent with 0 in the $\Omega_m=0.31$ $\Lambda$CDM cosmology,
-    while they deviate from 0 at significant confidence levels in the $\Omega_m=0.1$ cosmology and the $w=-2.5$ cosmology.
-   %showing the redshift dependence of AP effect.
-   Applying the likelihood analysis described in Sec. \ref{sec:likelihood},
-    the two latter models disfavored at 5.3$\sigma$ and 7.5$\sigma$ CL compared to the $\Omega_m=0.31$ $\Lambda$CDM cosmology.
+   \caption{\label{fig_diffz}
+  2pCF at different redshfits.
    }
 \end{figure*}
 
+\begin{figure*}
+   \centering{
+%   \includegraphics[width=18cm]{fig9_0.eps}
+%   \includegraphics[width=18cm]{fig9_1.eps}
+%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
+%    \includegraphics[height=8cm]{smu.eps}
+    \includegraphics[width=18cm]{fig3.eps}
+   }
+   \caption{\label{fig_cosmo}
+   2pCF in cosmologies.
+   }
+\end{figure*}
+
+
+\begin{figure*}
+   \centering{
+   \includegraphics[width=16cm]{fig4.eps}
+   \includegraphics[width=16cm]{fig5.eps}
+   }
+   \caption{\label{fig_sys}
+  Systematic effects.
+   }
+\end{figure*}
 \subsection{Cosmological Constraints}
 
 
@@ -855,14 +796,8 @@ the conditional PDF of the observation $\bf D$ given the value of parameter.
    %\includegraphics[width=16cm,natwidth=52,natheight=40]{fig10.eps}
    %\includegraphics[width=16cm]{fig10.eps}
    }
-   \caption{\label{fig_contours}
-   Likelihood contours (68.3\%, 95.4\%) in the $\Omega_m-w$ plane from our method and other cosmological probes.
-   %obtained from the BOSS DR12 CMASS and LOWZ samples.
-   Using the BOSS DR12 galaxies within the redshift range $0.15< z< 0.693$, our method achieves tight cosmological constraints on $\Omega_m$ and $w$.
-   The area of the 1$\sigma$ contour of our method is smaller than all other probes.
-   Constraints from various probes are consistent with each other.
-   See Sec. \ref{sec:constraint} for details.
-   %in very good consistent with the other methods.
+   \caption{\label{fig}
+   Likelihood contours (68.3\%, 95.4\%) in the $\Omega_m-w$ plane from our method.
    }
 \end{figure*}
 
@@ -1124,6 +1059,10 @@ Li, X.-D., Park, C., Forero-Romero, J., \& Kim, J. 2014, ApJ, 796, 137
 
 \bibitem[Li et al.(2015)]{Li2015}
 Li, X.-D., Park, C., Sabiu, C.G., \& Kim, J. 2015, MNRAS, 450, 807 
+
+\bibitem[Li et al.(2016)]{Li2016}
+Li, X.-D., Park, C., Sabiu, C.G., \& Kim, J. 2016, submitted to ApJ
+
 
 %\bibitem[Linder(2003)]{Linder2003}
 %Linder, E.V. 2003, Phys. Rev. Lett., 90, 091301
