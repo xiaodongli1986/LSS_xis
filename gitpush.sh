@@ -15,6 +15,8 @@ git add src/*.py
 git add src/fig*.eps
 git add src/*.ipynb
 
+git add J08*.slice*
+
 git add draft/BOSSAP/*.*
 git add draft/gal2pcf/*.*
 git add draft/draft*.pdf
