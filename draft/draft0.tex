@@ -320,49 +320,53 @@ but there is also a turnover from LOS shape compression and volume shrink at low
 
 \section{The Simulation Data}\label{sec:data}
 
-The HR4 simulation  \citep{hr4} used a box size $L={3150}$ $h^{-1}$Mpc, 
-and $N=6300^3$ particles.  
-The simulation used the second order Lagrangian perturbation theory (2LPT) initial conditions at $z_{i}=100$ and a WMAP5 cosmology
-$(\Omega_{b},\Omega_{m},\Omega_\Lambda,h,\sigma_8,n_s)$  = (0.044, 0.26, 0.74, 0.72, 0.79, 0.96) \citep[]{komatsu 2011}, 
-yielding a particle mass of $m_{p} \simeq 9.02 \times 10^9 \hMsun$.
-This starting redshift, combined  with 2LPT initial conditions, ensures an accurate mass function and power spectrum \citep{2014NewA...30...79L}. 
+We test the method on the Horizon Run 4  (HR4) simulation \citep{hr4}.
+HR4 used $N=6300^3$ particles in a box size of $L={3150}$ $h^{-1}$Mpc.  
+It adopted the second order Lagrangian perturbation theory (2LPT) initial conditions at $z_{i}=100$
+and a WMAP5 cosmology $(\Omega_{b},\Omega_{m},\Omega_\Lambda,h,\sigma_8,n_s)$  = (0.044, 0.26, 0.74, 0.72, 0.79, 0.96) \citep[]{komatsu 2011}.
+The particle mass is $\simeq m_{p} \simeq 9.02 \times 10^9 \hMsun$.
+%This starting redshift, combined  with 2LPT initial conditions, ensures an accurate mass function and power spectrum \citep{2014NewA...30...79L}. 
 
-Mock galaxy samples are produced from the HR4 simulation by using a modified version of the one-to-one correspondence scheme \citep{hong2016}. 
-The most bound member particles (MBPs) of simulated halos are adopted as the tracer of galaxies rather than the subhalos,
-and the merger timescale is taken into account in the lifetime of merged halos.
-We built the merger trees of simulated halos by tracking their MBPs from $z = 12$ to 0.
-When a merger event occurs, we calculate the merger timescale described in \cite{jiang2008} (hereafter J08)
-to determine when a satellite galaxy is completely disrupted.
+Mock galaxy samples are produced from the simulation based on a modified one-to-one correspondence scheme \citep{hong2016}. 
+The most bound member particles (MBPs) of simulated halos are adopted as the tracer of galaxies,
+and the merger timescale is computed to get the lifetime of merged halos.
+Merger trees of simulated halos are constructed by tracking their MBPs from $z = 12$ to 0.
+When a merger event occurs, we adopt the formular of \cite{jiang2008} to calculate the merger timescale 
+and determine when a satellite galaxy is completely disrupted.
 %We modeled the position and the velocity of a galaxy from the position and velocity of its corresponding MBP.
-By using the abundance matching, 
-we modeled the luminosity of a central/isolated galaxies from their current mass
-and of satellite galaxies 
-from their mass at the time of infall.
+%By using the abundance matching, 
+%we modeled the luminosity of a central/isolated galaxies from their current mass
+%and of satellite galaxies from their mass at the time of infall.
 
-\cite{hong2016} compared the 2pCF of our mock galaxy sample at $z = 0$ to the SDSS DR7 volume-limited galaxy sample \citep{zehavi2011}.
+\cite{hong2016} compared the 2pCF of the SDSS DR7 volume-limited galaxy sample \citep{zehavi2011} and the HR4 $z=0$ mock galaxies.
 %When a typical subhalo-galaxy correspondence scheme is applied, 
 %the 2pCF from our simulation is smaller than the observation and does not show a proper Finger-of-God (FOG) feature in our simulation resolution. 
 %We found that %the %2pCF of our galaxy sample agrees well with the observation.
-The simulated 2pCF shows a similar finger of god (FOG) feature \citep{FOG} as the observation in the contour map, 
-and the projected 2pCF agrees with the observation within 1$\sigma$ deviation on scales greater than 1 ${h^{-1}}$Mpc.
-
+The mock galaxies shows a similar finger of god (FOG) feature \citep{FOG} as the observation.
+On scales greater than 1 ${h^{-1}}$Mpc., 
+the projected 2pCF of the mock and observational samples agree within 1$\sigma$ deviation.
 
 %As will be introduced in the next section, 
-The HR4 simulation yield one all-sky light cone mock galaxy catalogue reaching $r=3\,150$ ${h^{-1}}$Mpc.
-As shown in \cite{bossAP},
-from one all-sky survey, 
-we are able to create four sets of non-overlapping north Galactic cap (NGC) samples for CMASS and LOWZ, 
-or eight sets of non-overlapping south Galactic cap (SGC) samples.
-In this paper we use these simulated galaxies for the estimation of the systematics in the 2pCF of the observed galaxies.
-
-
+The output of HR4 simulation includes one all-sky light cone mock galaxy catalogue reaching $r=3\,150$ ${h^{-1}}$Mpc 
+and a series ({\bf how many?}) of snapshot mock galaxy catalogues at different redshifts.
+In this paper we use five snapshot data at $z=0,0.5,1,1.5,2$.
+We require subhalos to have at least 30 member particles, 
+so the minimal mass of galaxies is $\simeq m_{p} \simeq 2.7 \times 10^{11} \hMsun$.
+At the five redshifts, we get a number of
+%$4.57\times 10^8$, $4.06\times 10^8$, $3.52\times 10^8$, $3.06\times 10^8$ and $2.28 \times 10^8$ mock galaxies,
+457, 406, 352, 206 and 228 million mock galaxies,
+corresponding to a number density of 
+%$1.46\times 10^{-2}$, $1.30\times 10^{-2}$, $1.13\times 10^{-2}$, $0.98\times 10^{-2}$ and $0.73\times 10^{-2}\ (h^{-1} \rm Mpc)^{-3}$,
+1.46, 1.30, 1.13, 0.98 and 0.73 in unit of $ 10^{-2} h^{3} \rm Mpc^{-3}$,
+%$1.46\times 10^{-2}$, $1.30\times 10^{-2}$, $1.13\times 10^{-2}$, $0.98\times 10^{-2}$ and $0.73\times 10^{-2}\ (h^{-1} \rm Mpc)^{-3}$,
+respectively.
 
 
 
 \section{Methodology}\label{sec:methodology}
 
-We measure the 2pCF in redshift bins of galaxies and 
-determine cosmological parameters by examining the redshift evolution of clustering anisotropy.
+We measure the angular 2pCF in the five redshifts.
+We determine cosmological parameters by examining the redshift evolution of clustering anisotropy.
 Mock survey samples are used to correct the results for the systematics and to estimate the covariance.
 %Our procedure is as follows.
 
