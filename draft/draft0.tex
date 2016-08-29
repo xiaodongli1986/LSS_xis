@@ -233,13 +233,13 @@ We conclude in \S 5.
 \begin{figure*}
    \centering{
    \includegraphics[height=8cm]{fig1_a.eps}
-   \includegraphics[height=8cm]{fig1_b.eps}
+   \includegraphics[height=8.5cm]{fig1_b.eps}
    }
    \caption{\label{fig_xyquan}
    %Apparent distortion of objects in four wrongly assumed cosmologies, assuming a true cosmology of .
    The scaling in four wrongly assumed cosmologies ..., % $\Omega_m=0.41$, $w=-1.3$ and $\Omega_m=0.11$, $w=-0.7$, 
    assuming a true cosmology of $\Omega_m=0.26$, $w=-1$.
-   Left panel shows a series of circular objects, measured by an observer located at the origin.
+   Left panel shows a series objects distributes as five perfect squares, measured by an observer located at the origin.
    Their true positions and shapes are plotted in blue dashed lines.
    The observer measures the redshifts of these objects, adopts the wrong cosmologies to compute the distance,
    and obtains wrong results (the red solid lines).
@@ -291,34 +291,37 @@ where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology an
 The effects due to wrongly assumed cosmological parameters are shown in the upper panel of Figure \ref{fig_xyquan}.
 Suppose that the true cosmology is a flat $\Lambda$CDM with present density parameter $\Omega_m=0.26$
 and standard dark energy EoS $w=-1$.
-If we were to distribute a series of perfect squares at various distances from 500 Mpc/h to ???? Mpc/h,
+If we were to distribute a series of perfect squares at various distances from 500 Mpc/h to 3\,000 Mpc/h,
 and an observer located at the origin were to measure their redshifts and compute their positions and shapes 
-using redshift-distance relations of ??? incorrect cosmologies
-(TBM )
-\begin{enumerate}
- \item $\Omega_m=0.41$, $w=-1.3$,
- \item $\Omega_m=0.11$, $w=-0.7$,
-\end{enumerate}
+using redshift-distance relations of four incorrect cosmologies
+\begin{eqnarray}
+ & &{\rm (i)}.\ \Omega_m=0.40,\ w=-1.0, \nonumber \\ 
+ & &{\rm (ii)}.\ \Omega_m=0.15,\ w=-1.0, \nonumber\\ \noindent
+ & &{\rm (iii)}.\ \Omega_m=0.26,\ w=-0.5,\nonumber\\ \noindent
+ & &{\rm (iv)}.\ \Omega_m=0.26,\ w=-1.5, \nonumber \noindent
+\end{eqnarray}
 the shapes of the squares appear distorted (AP effect),
 and their volumes are changed (volume effect).
-In the cosmological model (ii) with $\Omega_m=0.11$, $w=-0.7$, we see a stretch of the shape in the line of sight (LOS) direction 
-(hereafter ``LOS shape stretch'')
-and magnification of the volume (hereafter ``volume magnification''), 
-while in the model with $\Omega_m=0.41$, $w=-1.3$, we see opposite effects of LOS shape compression and volume shrinkage.
+In the cosmological models in model (i,iii) we see a compression of size (in both angular and LOS direction)
+and the degree of compression increases with increasing distance,
+while in models (ii,iv) we see stretch of size whose degree also evolves with redshift.
+Thus, when wrong cosmological parameters are adopted,
+the apparent size of objects are distorted, and the magnitude of distortion also varies with redshift.
 
-In the lower panel of Figure \ref{fig_xyquan}, we plot the $\frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}$ redshift. 
-In cosmology (i), both quantities have values less than 1, 
-indicating LOS shape compression and volume shrink.
-The effect in cosmology (ii) is slightly more subtle. At low redshift, the effect of dark energy is important, 
-and there is LOS shape compression and volume reduction due to the quintessence like dark energy EoS.
-However, at higher redshift the role of dark matter is more important, and we see LOS shape stretch and volume magnification due to the small $\Omega_m$.
+In this paper we will use the galaxy angular 2pCF to probe the redshift dependence of the distortion in angular direction.
+In the right panel of Figure \ref{fig_xyquan} we plot the redshift dependence of the change in angular size, 
+${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$, in the four wrong cosmologies.
+In all cosmologies, there is clear evolution of ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$ 
+in the redshift range $0<z<2$.
+E.g., when use the quintessence cosmology 
+$\Omega_m=0.26,\ w=-0.5$ to infer the postions of objects,
+the angular size is underestimated by 
+%12.5\%, 17.7\%, 20.1\%, 21.3\%
+8.9\%, 12.3\%, 13.6\%, 14.1\% 
+at $z=0.5,1,1.5,2$.
 
-More importantly, Figure \ref{fig_xyquan} highlights the redshift dependence of the AP and volume effects. 
-For example, in the cosmology with $\Omega_m=0.41$, $w=-1.3$, 
-both the LOS shape stretch and volume magnification become more significant with increasing redshift.
-In the cosmology with $\Omega_m=0.11$, $w=-0.7$,
-not only do the magnitudes of the effects evolve with redshift,
-but there is also a turnover from LOS shape compression and volume shrink at lower redshift to LOS shape stretch and volume magnification at higher redshift.s
+
+
 
 \section{The Simulation Data}\label{sec:data}
 
@@ -363,6 +366,85 @@ corresponding to a number density of
 %$1.46\times 10^{-2}$, $1.30\times 10^{-2}$, $1.13\times 10^{-2}$, $0.98\times 10^{-2}$ and $0.73\times 10^{-2}\ (h^{-1} \rm Mpc)^{-3}$,
 respectively.
 
+\section{Galaxy angular 2pCF}
+
+\subsection{Galaxy distribution at different redshifts}
+
+The left panels of Figure \ref{fig_scatter} show the $x,y$ coordinates of galaxies in a 
+$260 h^{-1} {\rm Mpc} \times 130 h^{-1} {\rm Mpc} \times 105 h^{-1} {\rm Mpc}$ volume, 
+taken from the five snapshots.
+The gravitational growth of structures with decreasing redshift is clearly shown.
+We display all mock galaxies with $M> 3.0 \times 10^{11} \hMsun$.
+At lower redshift, galaxies become more massive, so they are more galaxies satisfying the threshold.
+
+If one adopts a wrong cosmology to compute galaxy positions, there would be a scaling of the galaxy distribution.
+In the left panel we show the case when a wrong set of parameters $\Omega_m=0.05,\ w=-1.5$ is assumed,
+leading to large upscaling of $25.6\%,47.3\%,62.2\%,71.7\%$ at redshifts $z=0.5,1.0,1.5,2.5$.
+
+Compared with the true galaxy distribution, the apparent distribution inferred by wrong set of parameters
+show clear evolution with redshift due to the different scaling at different redshifts.
+In case of Figure \ref{fig_scatter}, the apparent size of large scale structures increases with redshift.
+
+The growth of structure also make the size of structures evolves with redshift.
+In the next subsection we will discuss how to distinguish these two effects in the galaxy angular 2pCF.
+
+
+\begin{figure*}
+   \centering{
+   %\includegraphics[height=5.9cm]{fig8_0.eps}
+   %\includegraphics[height=5.9cm]{fig8_wrongcos_0.eps}
+   \includegraphics[width=16cm]{fig2.eps}
+   }
+   \caption{\label{fig_scatter}
+  blah
+   }
+   % Need a better plot to show angular size variation!!!
+\end{figure*}
+
+\subsection{Galaxy angular 2pCF at different redshifts}
+
+\begin{figure*}
+   \centering{
+%   \includegraphics[width=18cm]{fig9_0.eps}
+%   \includegraphics[width=18cm]{fig9_1.eps}
+%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
+%    \includegraphics[height=8cm]{smu.eps}
+    \includegraphics[width=18cm]{fig2.eps}
+   }
+   \caption{\label{fig_diffz}
+  2pCF at different redshfits.
+   }
+\end{figure*}
+
+\begin{figure*}
+   \centering{
+%   \includegraphics[width=18cm]{fig9_0.eps}
+%   \includegraphics[width=18cm]{fig9_1.eps}
+%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
+%    \includegraphics[height=8cm]{smu.eps}
+    \includegraphics[width=18cm]{fig3.eps}
+   }
+   \caption{\label{fig_cosmo}
+   2pCF in cosmologies.
+   }
+\end{figure*}
+
+
+\begin{figure*}
+   \centering{
+   \includegraphics[width=16cm]{fig4.eps}
+   \includegraphics[width=16cm]{fig5.eps}
+   }
+   \caption{\label{fig_sys}
+  Systematic effects.
+   }
+\end{figure*}
+
+
+\section{cosmological constraint}
+
+
+
 \section{Methodology}\label{sec:methodology}
 
 We measure the angular 2pCF in the five redshifts.
@@ -375,17 +457,7 @@ Mock survey samples are used to correct the results for the systematics and to e
 %\caption{\label{fig8} hahaha}
 %\end{minipage}
 
-\begin{figure*}
-   \centering{
-   %\includegraphics[height=5.9cm]{fig8_0.eps}
-   %\includegraphics[height=5.9cm]{fig8_wrongcos_0.eps}
-   \includegraphics[width=16cm]{fig8.eps}
-   }
-   \caption{\label{fig_scatter}
-  blah
-   }
-   % Need a better plot to show angular size variation!!!
-\end{figure*}
+
 
 
 
@@ -735,42 +807,7 @@ ${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock ga
 
 
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=18cm]{fig9_0.eps}
-%   \includegraphics[width=18cm]{fig9_1.eps}
-%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
-%    \includegraphics[height=8cm]{smu.eps}
-    \includegraphics[width=18cm]{fig2.eps}
-   }
-   \caption{\label{fig_diffz}
-  2pCF at different redshfits.
-   }
-\end{figure*}
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=18cm]{fig9_0.eps}
-%   \includegraphics[width=18cm]{fig9_1.eps}
-%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
-%    \includegraphics[height=8cm]{smu.eps}
-    \includegraphics[width=18cm]{fig3.eps}
-   }
-   \caption{\label{fig_cosmo}
-   2pCF in cosmologies.
-   }
-\end{figure*}
-
-
-\begin{figure*}
-   \centering{
-   \includegraphics[width=16cm]{fig4.eps}
-   \includegraphics[width=16cm]{fig5.eps}
-   }
-   \caption{\label{fig_sys}
-  Systematic effects.
-   }
-\end{figure*}
 \subsection{Cosmological Constraints}
 
 
