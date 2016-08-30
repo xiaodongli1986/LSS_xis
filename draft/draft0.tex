@@ -388,7 +388,6 @@ In case of Figure \ref{fig_scatter}, the apparent size of large scale structures
 The growth of structure also make the size of structures evolves with redshift.
 In the next subsection we will discuss how to distinguish these two effects in the galaxy angular 2pCF.
 
-
 \begin{figure*}
    \centering{
    %\includegraphics[height=5.9cm]{fig8_0.eps}
@@ -401,20 +400,9 @@ In the next subsection we will discuss how to distinguish these two effects in t
    % Need a better plot to show angular size variation!!!
 \end{figure*}
 
-\subsection{Galaxy angular 2pCF at different redshifts}
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=18cm]{fig9_0.eps}
-%   \includegraphics[width=18cm]{fig9_1.eps}
-%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
-%    \includegraphics[height=8cm]{smu.eps}
-    \includegraphics[width=18cm]{fig2.eps}
-   }
-   \caption{\label{fig_diffz}
-  2pCF at different redshfits.
-   }
-\end{figure*}
+\subsection{Galaxy angular 2pCF: amplitude and shape at different redshifts}
+
 
 \begin{figure*}
    \centering{
@@ -424,6 +412,56 @@ In the next subsection we will discuss how to distinguish these two effects in t
 %    \includegraphics[height=8cm]{smu.eps}
     \includegraphics[width=18cm]{fig3.eps}
    }
+   \caption{\label{fig_diffz}
+  2pCF at different redshfits.
+   }
+\end{figure*}
+
+The left panel of Figure \ref{fig_diffz} displays the measured angular 2pCF of galaxies (multiplied by scale $r$) in the five snapshot.
+
+The amplitude of 2pCF is crucially affected by the cosmic structure growth and the galaxy bias.
+%The amplitude is higher at $z=0$, 
+We find $\xi(z=0)>\xi(z=0.5)>\xi(z=1)$.
+At low redshift, the large scale structures experienced most gravitational growth,
+leading to stronger clustering strength and higher amplitude of 2pCF.
+On the contrary, at higher redshift we find $\xi(z=2)>\xi(z=1.5)>\xi(z=1)$,
+%The trend is different from $z=1,1.5,2$,
+simply because by applying a uniform mass cut we are selecting more biased galaxies at higher redshift.
+
+Different from the large variation of amplitude among the different redshifts, %The shape of $r\xi$ also evolves with redshift.
+the shape of 2pCF maintains similar at all redshifts. 
+At all redshifts, we see the $r\xi$ peaks at $r\sim9 h^{-1}\rm Mpc$,
+and monotonically drops at larger or smaller scales.
+The only exception is the relative enhancement of 2pCF at $r\lesssim 2 h^{-1}\rm Mpc$,
+which is caused by the non-linear growth of structures on small scales 
+and becomes more dramatic at lower redshfit.
+
+The middle panel of Figure \ref{fig_diffz} displays the $r\xi$ normalized by the overall amplitude within $5h^{-1}{\rm Mpc} < r < 50h^{-1}{\rm Mpc}$
+(here after $\hat r\xi$).
+The nice overlapping of the results from five redshifts 
+suggests small evolution of shape with redshift.
+In the right panel, we compare the high redshift $\hat r\xi$ 
+to the $z=0$ result.
+There is 1-4\% relative enhancement 
+at $r<10h^{-1}\rm Mpc$,
+and $<1.5\%$ relative suppression at $r>25 h^{-1}\rm Mpc$.
+The trend is monotonic with redshift.
+
+In all, we conclude that the shape of the 2pCF is more robust than the amplitude against redshift and galaxy bias.
+
+\subsection{Galaxy angular 2pCF: in wrong cosmologies }
+
+
+
+
+\begin{figure*}
+   \centering{
+%   \includegraphics[width=18cm]{fig9_0.eps}
+%   \includegraphics[width=18cm]{fig9_1.eps}
+%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
+%    \includegraphics[height=8cm]{smu.eps}
+    \includegraphics[width=18cm]{fig4.eps}
+   }
    \caption{\label{fig_cosmo}
    2pCF in cosmologies.
    }
@@ -432,8 +470,8 @@ In the next subsection we will discuss how to distinguish these two effects in t
 
 \begin{figure*}
    \centering{
-   \includegraphics[width=16cm]{fig4.eps}
    \includegraphics[width=16cm]{fig5.eps}
+   \includegraphics[width=16cm]{fig6.eps}
    }
    \caption{\label{fig_sys}
   Systematic effects.
