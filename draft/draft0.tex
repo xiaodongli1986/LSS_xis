@@ -283,7 +283,7 @@ which can be described by the following quantities
 \begin{equation}\label{eq:DA}
  %{\rm Degree\ of\ volume\ magnification \equiv}
  %{\rm rat}_{\rm volume\ mag}\equiv
- \frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}
+ \alpha_{\bot} \equiv \frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}
  = \frac{D_{A, \rm wrong}}{D_{A, \rm true}},
 \end{equation}
 where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology and wrongly assumed cosmology.
@@ -411,6 +411,7 @@ In the next subsection we will discuss how to distinguish these two effects in t
 %   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
 %    \includegraphics[height=8cm]{smu.eps}
     \includegraphics[width=18cm]{fig3.eps}
+    \includegraphics[width=18cm]{fig3_b.eps}
    }
    \caption{\label{fig_diffz}
   2pCF at different redshfits.
@@ -451,6 +452,75 @@ In all, we conclude that the shape of the 2pCF is more robust than the amplitude
 
 \subsection{Galaxy angular 2pCF: in wrong cosmologies }
 
+When a wrong set of cosmological parameters is adopted,
+the galaxy distribution is artificially scaled.
+This scaling is expected to change the shape of the 2pCF,
+following the relationship,
+\begin{equation}
+ \hat \xi_{\rm wrong}(r) = \hat\xi_{\rm true}(\alpha_{\bot} r),
+\end{equation}
+a simple consequence of the fact that clustering patterns at distance $r$ now appears on a the scale $\alpha_{\bot} r$.
+The redshift evolution of $\alpha_{\bot}$ leads to redshfit evolution of shape.
+
+\begin{figure*}
+   \centering{
+%   \includegraphics[width=18cm]{fig9_0.eps}
+%   \includegraphics[width=18cm]{fig9_1.eps}
+%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
+%    \includegraphics[height=8cm]{smu.eps}
+    
+   }
+   \caption{\label{fig_cosmo}
+   2pCF in cosmologies.
+   }
+\end{figure*}
+
+Lower panels of Figure \ref{fig_diffz} shows the $r\xi$ in five 
+snapshots, in case that the cosmology $\Omega_m=0.05,\ w=-1.5$ 
+is adopted to construct the galaxy distribution (the right panels of Figure \ref{fig_scatter}).
+The middle panel displays the clear redshift evolution of shape of $r\xi$.
+E.g, from $z=0$ to $z=2$,
+the peak location is shifted from $r=9h^{-1} \rm Mpc$ to $r\sim15 h^{-1}\rm Mpc$ at $z=2$
+since the angular separation is upscaled by $71.7\%$.
+
+The right panel shows that, 
+at higher redshift, 
+there is a 20-40\% change in the value of $\hat {r\xi}$.
+
+The amplitude of $r\xi$ is amplified due to the stretch of scale.
+As shown in the left panel, the amplitude monotonically increases as a function of redshift.
+But this phenomenon can also appear in case of gravitational growth of structure or increasing of bias,
+so we will not make use of it to do cosmological constraint.
+We utilize the redshift evolution of the 2pCF shape as a signal suggesting that the assumed cosmological parameters are wrong.
+
+In Figure \ref{fig_cosmo} we further plot the redshift evolution of 2pCF in the four wrong cosmologies of Figure \ref{fig_xyquan}.
+In all cases, the scaling leads to evident redshift evolution of the shape of $r\xi$.
+When the cosmologies $\Omega_m=0.4,w=-1$ and $\Omega_m=0.26,w=-0.5$ are adopted,
+the compression of structure makes the clustering patterns appears on smaller scales.
+This leads to ``steeper'' slope of $r\xi$, 
+and the higher the redshift, the steeper the slope.
+To the opposite, when adopting the cosmologies $\Omega_m=0.15,w=-1$ and $\Omega_m=0.26,w=-1.5$,
+the stretch of size makes the slope shallower at higher redshfits.
+
+
+\subsection{Systematic effects}
+
+
+
+\subsection{Likelihood Analysis}
+
+One can build up a likelihood function to 
+describe how significant is the redshift evolution of the 2pCF shape
+so that to determine whether the adopted cosmological parameters are correct.
+\begin{equation}\label{eq:chisq1}
+\chi^2\equiv \sum_{i=2}^{6} \sum_{j_1=1}^{n_{\mu}} \sum_{j_2=1}^{n_{\mu}} {\bf p}(z_i,\mu_{j_1}) ({\bf Cov}_{i}^{-1})_{j_1,j_2}  {\bf p}(z_i,\mu_{j_2}),
+\end{equation}
+where ${\bf p}(z_i,\mu_{j})$ is the redshift evolution of clustering, 
+$\hat \xi_{\Delta s}$, with systematic effects subtracted
+\begin{eqnarray}\label{eq:bfp}
+ {\bf p}(z_i,\mu_{j}) \equiv&\ \delta \hat{r\xi}(z_i,z_1,\mu_j) - \delta \hat{r\xi}_{\rm sys}(z_i,z_1,\mu_j)
+\end{eqnarray}
+${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock galaxies identified from HR3 N-body simulation.
 
 
 
