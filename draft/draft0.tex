@@ -392,7 +392,8 @@ In the next subsection we will discuss how to distinguish these two effects in t
    \centering{
    %\includegraphics[height=5.9cm]{fig8_0.eps}
    %\includegraphics[height=5.9cm]{fig8_wrongcos_0.eps}
-   \includegraphics[width=16cm]{fig2.eps}
+   %\includegraphics[width=16cm]{fig2.eps}
+   \includegraphics[width=16cm,natwidth=8,natheight=14]{fig2.pdf}
    }
    \caption{\label{fig_scatter}
   blah
@@ -462,18 +463,6 @@ following the relationship,
 a simple consequence of the fact that clustering patterns at distance $r$ now appears on a the scale $\alpha_{\bot} r$.
 The redshift evolution of $\alpha_{\bot}$ leads to redshfit evolution of shape.
 
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=18cm]{fig9_0.eps}
-%   \includegraphics[width=18cm]{fig9_1.eps}
-%   \includegraphics[height=8cm]{Tpcf--plot--Normed.eps}
-%    \includegraphics[height=8cm]{smu.eps}
-    
-   }
-   \caption{\label{fig_cosmo}
-   2pCF in cosmologies.
-   }
-\end{figure*}
 
 Lower panels of Figure \ref{fig_diffz} shows the $r\xi$ in five 
 snapshots, in case that the cosmology $\Omega_m=0.05,\ w=-1.5$ 
@@ -505,6 +494,79 @@ the stretch of size makes the slope shallower at higher redshfits.
 
 \subsection{Systematic effects}
 
+The same as \cite{Li2014,Li2015,Li2016} we need to correct for the redshift evolution of $r\xi$ caused by effects other than the wrongly assumed cosmological parameters.
+
+Figure \ref{fig_diffz} already shows that, the growth of structure, especially in low redshift and on non-linear scales, 
+changes the shape of $r\xi$ and caused relative enhancement on $r\lesssim2 h^{-1}\rm Mpc$.
+So we limit the region of scale to $r>5h^{-1}\rm Mpc$ to minimize its effect.
+
+Galaxies are biased tracers of dark matter field, 
+and more massive galaxies tend to reside in regions with higher density contrast.
+So in large scale structure surveys the bias of the galaxy sample is an important fator which has large effect on the clustering properties of the sample.
+The upper panels of Figure \ref{fig_sys} displays five set of galaxy samples in a $3175\times3175\times105$ $(h^{-1}\rm Mpc)^3$ volume, taken from the $z=0$ snapshots data.
+Different lower mass limits of $3\times 10^{11} M_{\odot}$, $3\times 10^{11} M_{\odot}$, $3\times 10^{11} M_{\odot}$ and $3\times 10^{11} M_{\odot}$
+are imposed to create subsamples with different galaxy bias, 
+and the measured angular 2pCF are displayed.
+The different mass cuts result in large variation in the amplitude of the 2pCF (left panel),
+while the shape of the 2pCF remains less affected (middle panel).
+Compared with the sample with mass cut $M>3\times 10^{11} M_{\odot}$,
+samples with mass limit $3\times 10^{11} M_{\odot}$, $3\times 10^{11} M_{\odot}$ and $3\times 10^{11} M_{\odot}$
+have the amplitude of 2pCFs enhanced by $10\%,\ 50\%$ and $100\%$,
+while the change in $\hat{r\xi}$ is only $0.5\%,\ 2\%$ and $4\%$.
+Considering the very large change in the mass cut,
+the change in the shape of 2pCF is not significant.
+
+The galaxy peculiar velocity contribute to the observed galaxy redshift and distorted the galaxy radial position in redshift space,
+known as the redshift space distortion (RSD).
+It is the major source of systematics for our analysis of \cite{Li2014,Li2015,Li2016}, where the 3D galaxy distribution is utilized to derive cosmological constraint.
+In this analysis its effect becomes much milder since the angular positions of the galaxies is not affected by RSD at all.
+But it still affects our analysis in the procedure of preparing the subsamples of galaxies for 2pCF analysis.
+The galaxies observed in a survey are split into shells of subsamples, with different redshift ranges, to get the 2pCF at different redshifts.
+RSD disortes the galaxy redshift and as a result some galaxies close the boundaries of shells will be distributed to wrong redshift shells.
+
+The lower panel of Figure \ref{fig_sys} displays the RSD effect on 2pCF.
+To mimick the effect of RSD we shift the $Z$ coordinates of galaxies according to the relation 
+\begin{equation}\label{eq:zvpeu}
+\Delta z = (1+z) \frac{v_{{\rm Z}}}{c},
+\end{equation}
+where $v_{{\rm Z}}$ is the galaxy peculiar velocity in $Z$ direction.
+Then we split the whole box into 30 slices with thickness $105h^{-1}\rm Mpc$, 
+and measure the angular 2pCF.
+The left panel shows that the amplitude of measured 2pCF is enhanced by $\sim 10\%$ in case of considering the RSD effect on spliting samples.
+The middle panel shows that the shape of 2pCF is also altered -- the slop is suppressed.
+If looking at the redshift evolution,
+the curves $\hat{r\xi} - \hat{r\xi}(z=0)$ displayed in the right panel,
+they changed a lot compared with the case of no RSD effect (the right panel of Figure \ref{fig_diffz}),
+but do not become much larger. %But RSD effect does not introduce large redshfit evolution, although the shape of  is 
+
+
+Another effect is redshfit errors ...
+Especially large in photometric surveys...
+
+One shall construct reliable mock surveys to correct the systematic effects ...
+
+%The outer boundary of the mock survey becomes fuzzy due to the peculiar velocity effect 
+%on the galaxy redshifts (Eq. (\ref{eq:zvpeu})).
+%A population of galaxies, that are expected to enter the $z<0.7$ region from the outside, is missing.
+%(these $z>0.7$ galaxies have a peculiar velocity toward us and 
+%their observed redshfits become lower than 0.7).
+%To avoid this problem we set the maximal redshift at 0.693, 
+%23.3 $h^{-1}{\rm Mpc}$ away from $z=0.7$.
+
+
+%3.000e11', '1.000e12', '4.000e12',  '1.000e13
+
+
+
+\begin{figure*}
+   \centering{
+   \includegraphics[width=16cm]{fig5.eps}
+   \includegraphics[width=16cm]{fig6.eps}
+   }
+   \caption{\label{fig_sys}
+  Systematic effects.
+   }
+\end{figure*}
 
 
 \subsection{Likelihood Analysis}
@@ -538,15 +600,6 @@ ${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock ga
 \end{figure*}
 
 
-\begin{figure*}
-   \centering{
-   \includegraphics[width=16cm]{fig5.eps}
-   \includegraphics[width=16cm]{fig6.eps}
-   }
-   \caption{\label{fig_sys}
-  Systematic effects.
-   }
-\end{figure*}
 
 
 \section{cosmological constraint}
