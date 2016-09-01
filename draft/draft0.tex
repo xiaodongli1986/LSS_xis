@@ -540,10 +540,13 @@ they changed a lot compared with the case of no RSD effect (the right panel of F
 but do not become much larger. %But RSD effect does not introduce large redshfit evolution, although the shape of  is 
 
 
-Another effect is redshfit errors ...
-Especially large in photometric surveys...
+Similar to RSD, the redshift errors in survey can affect the subsamples of galaxies by buring the boundaries of shells.
+This effect should be properly quantified, especially in case of a photometric survey where the redshift uncertainty can be $\Delta z \\approx 0.02$.
 
-One shall construct reliable mock surveys to correct the systematic effects ...
+In \cite{Li2014,Li2015,Li2016}, the systematic effects contributing to the redshfit evolution of galaxy clusterings 
+are modeled in mock surveys and subtracted.
+Similar treatment could be conducted here.
+One shall construct mock surveys with the above effects included for the correction of systematics.
 
 %The outer boundary of the mock survey becomes fuzzy due to the peculiar velocity effect 
 %on the galaxy redshifts (Eq. (\ref{eq:zvpeu})).
@@ -571,19 +574,56 @@ One shall construct reliable mock surveys to correct the systematic effects ...
 
 \subsection{Likelihood Analysis}
 
-One can build up a likelihood function to 
-describe how significant is the redshift evolution of the 2pCF shape
+We build up a likelihood function to 
+describe how significant is the redshift evolution of the 2pCF shape,
 so that to determine whether the adopted cosmological parameters are correct.
+The redshift evolution is characterized by the difference between the $\hat{r\xi}$ measured in the lowest redshift and higher ones;
+the cosmology having least redshift evolution of $\hat{r\xi}$ is considered to be the most plausible one and has smallest $\chi^2$.
+So we have
 \begin{equation}\label{eq:chisq1}
-\chi^2\equiv \sum_{i=2}^{6} \sum_{j_1=1}^{n_{\mu}} \sum_{j_2=1}^{n_{\mu}} {\bf p}(z_i,\mu_{j_1}) ({\bf Cov}_{i}^{-1})_{j_1,j_2}  {\bf p}(z_i,\mu_{j_2}),
+\chi^2\equiv \sum_{i=2}^{n_{z}} \sum_{j_1=1}^{n_{r}} \sum_{j_2=1}^{n_{r}} {\bf p}(z_i,r_{j_1}) ({\bf Cov}_{i}^{-1})_{j_1,j_2}  {\bf p}(z_i,r_{j_2}),
 \end{equation}
-where ${\bf p}(z_i,\mu_{j})$ is the redshift evolution of clustering, 
-$\hat \xi_{\Delta s}$, with systematic effects subtracted
+where $n_z$ is the number of redshifts, 
+is number of bins in $\hat{r\xi(r)}$;
+in this analysis we have five redshift bins, 
+and 35 $r$ bins with bin width $1h^{-1}\rm Mpc$ in the range $5h^{-1}{\rm Mpc}<r<40h^{-1}{\rm Mpc}$.
+${\bf p}(z_i,r_{j})$ is the redshift evolution of clustering, 
+$\hat {r\xi}$, with systematic effects subtracted
 \begin{eqnarray}\label{eq:bfp}
- {\bf p}(z_i,\mu_{j}) \equiv&\ \delta \hat{r\xi}(z_i,z_1,\mu_j) - \delta \hat{r\xi}_{\rm sys}(z_i,z_1,\mu_j)
+ {\bf p}(z_i,r_{j}) \equiv&\ \delta \hat{r\xi}(z_i,z_1,r_j) - \delta \hat{r\xi}_{\rm sys}(z_i,z_1,r_j)
 \end{eqnarray}
-${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock galaxies identified from HR3 N-body simulation.
+${\bf Cov}_i$ is the covariance matrix.
 
+It is difficult to conduct the 2pCF of the whole snapshot box with hundreds of millions of galaxies.
+We split the box into 120 subsamples with $X,Y,Z$ sizes of $1575h^{-1}{\rm Mpc},1575h^{-1}{\rm Mpc}, 105h^{-1}{\rm Mpc}$
+and measure the angular 2pCF in the $X-Y$ plan in these subsamples. 
+The average of the 2pCFs are taken as the 2pCF of the whole box.
+The covariance matrix is also estimated from these 2pCFs.
+
+In real observations we observe {\it different} objects at different redshfit shells.
+To mimick this when calculating the redshift evolution of 2pCF we use subsamples at different positions at different redshfits.
+E.g., if for the $z=0$ snapshot we use the $\hat{r\xi}$ measured in the subsample $0h^{-1}{\rm Mpc}<Z<105 h^{-1}{\rm Mpc}$,
+at higher redshifts we adopt the $\hat{r\xi}$ measured in a subsample $105h^{-1}{\rm Mpc}<Z<210 h^{-1}{\rm Mpc}$,
+and take the difference between them to get $\delta \hat{r\xi}$.
+So we are always comparing 2pCF measured from different samples of galaxies.
+If simply comparing the 2pCF of a same sample of galaxies at different redshifts, 
+one would significantly underestimate the statistical undertainty of $\delta \hat{r\xi}$ by ignoring the cosmic variance
+\footnote{The error bars displayed in all figures are estimated from the 120 subsamples and for the error bar of redshift evolution of 2pCF 
+we always take the cosmic variance into consideration.}.
+%estimated from the 72 sets of PSB mock galaxies identified from HR3 N-body simulation.
+
+
+
+Figure \ref{fig_cosmo} displayed the 2pCF measured in the four cosmologies displayed in Figure \ref{fig_xyquan}.
+For the cosmologies $\Omega_m=0.4,w=-1$ and $\Omega_m=0.26,w=-0.5$,
+the compression of structure rescale large scale clustering patterns into small scales;
+the compression becomes more significant at higher redshift.
+In these cosmologies we get 2pCFs with steeper slope and, the higher redshift, the steeper.
+For $\Omega_m=0.15,w=-1$ and $\Omega_m=0.26,w=-1.5$,
+the stretch of structure leads to shallower slope of $\hat{r\xi}$ and, the higher the redshift, the shallower.
+In all cosmologies we find significant detection of redshift evolution of $\hat{r\xi}$ (in the lowest panels, $\delta \hat{r\xi}\neq0$).
+We computed the $\chi^2$ values according to Equation \ref{eq:chisq1} and found these sets of cosmological parameters are strongly disfacored 
+at $\gtrsim30\sigma$ CL.
 
 
 \begin{figure*}
@@ -602,392 +642,18 @@ ${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock ga
 
 
 
-\section{cosmological constraint}
+\section{Cosmological constraint}
 
 
 
-\section{Methodology}\label{sec:methodology}
-
-We measure the angular 2pCF in the five redshifts.
-We determine cosmological parameters by examining the redshift evolution of clustering anisotropy.
-Mock survey samples are used to correct the results for the systematics and to estimate the covariance.
-%Our procedure is as follows.
-
-%\begin{minipage}{0.9\linewidth}
-%\includegraphics[width= 0.3\linewidth]{fig8_0.eps}
-%\caption{\label{fig8} hahaha}
-%\end{minipage}
-
-
-
-
-
-\subsection{Grid of cosmology parameters}
-
-The observed coordinates ({\it RA, Dec, z}) of galaxies
-need to be converted to comoving coordinates ({\it x, y, z}) for the 2pCF analysis.
-The dependence of clustering anisotropy on cosmology enters through the conversion from redshift to comoving distance,
-i.e. the distance-redshift relation $r(z)$.
-We consider the case of a flat Universe dominated by matter and dark energy,
-so our $r(z)$ is governed by two parameters, $\Omega_m$ and $w$, as presented in Equation (\ref{eq:HDA})	.
-
-To constrain these two parameters we examine the parameter space of 
-$0.06\leq \Omega_m\leq 0.41$ and $-1.5 \leq w \leq -0.4$ with intervals of 
-$\delta \Omega_m = 0.005$ and $\delta w = 0.025$,
-forming a 71$\times$45 grid.
-%This coverage and step size shall be enough for us to determine the 95\% confidence level (CL) region with satisfactory precision.
-For each set of ($\Omega_m$, $w$), 
-the comoving coordinates of all galaxies are computed, 
-%the 2pCF of these galaxies in six redshift bins are measured,
-%and a $\chi^2$ value is then obtained by requiring least redshift evolution of anisotropy.
-%This enables us to infer the values and underlying distributions of $\Omega_m$ and $w$ through Bayesian analysis.
-and the 2pCF is ready to be calculated.
-
-\begin{figure*}
-   \centering{
-%   \includegraphics[width=14cm]{fig5.eps}
-   \includegraphics[width=14cm]{fig9.eps}
-   }
-   \caption{
-    \label{fig_2pcfcon} 
-    2D contour map of measured $\xi$ as a function of $\mu$ and $s$, from the six redshift bins of LOWZ and CMASS samples 
-      in the cosmology of $\Omega_m=0.31$ $\Lambda$CDM model.
-    The black dashed lines mark the scales 6\ $h^{-1}$Mpc $\leq s\leq$ 40\ $h^{-1}$Mpc.
-    %The correlation functions have rather large values on small sales such as $s=5$ $h^{-1}$Mpc,
-    %  and monotonically decreases to smaller values on larger scales due to weaker clustering.
-    The contour lines are not horizontal due to the effects of peculiar velocity.
-    The FOG and Kaiser effects clearly manifest themselves through the tilting of contour 
-     lines where $1-\mu \rightarrow 0$ and $1-\mu \gtrsim0.1$, respectively.
-    The six contour maps have rather similar appearance, implying small redshift evolution of $\xi$.
-   }
-      %The redshift density distribution of the BOSS DR12 galaxy samples, assuming a $\Lambda$CDM cosmology with $\Omega_m=0.31$.
-      %The blue and green solid histograms show the distribution of LOWZ and CMASS galaxies respectively. 
-      %The vertical dashed lines define the 6 redshift bins that are used to cut the samples.   }
-\end{figure*}
-
-
-
-\subsection{Measuring the correlation function}
-
-%We probe the Alcock-Paczynski effects using the 2pCF. 
-%The 2pCF is a mature statistic in cosmology and its optimal estimation considers minimal variance 
-%while dealing with complicated masks and selection functions. 
-%The most commonly adopted formulation is that of the 
-We adopt the Landy-Szalay estimator~\citep{1993ApJ...412...64L} to calculate the 2pCF,
+We constrain $\Omega_m$ and $w$ through Bayesian analysis (\citep{Bayesian}; also see \citep{LB2002,Li2016} for details).
+We assue the likelihood takes the form
 \begin{equation}
-\xi(s,\mu)=\frac{DD-2DR+RR}{RR}\ ,
+ \mathcal{L} \propto \exp\left[-\frac{\chi^2}{2}\right]
 \end{equation}
-where $DD$ is the number of galaxy--galaxy pairs, 
-$DR$ the number of galaxy-random pairs, 
-and $RR$ is the number of random--random pairs, 
-all separated by a distance defined by $s\pm\Delta s$ and $\mu\pm\Delta\mu$, 
-where $s$ is the distance between the pair and $\mu=\cos(\theta)$, 
-with $\theta$ being the angle between the line joining the pair of galaxies and the LOS direction to the target galaxy. 
-This statistic captures the anisotropy of the clustering signal.
+and scan the parameter space in $\Omega_m-w$ plane to obtain the 68.3\% and 97.4\% CL regions.
+The result is displayed in Figure \ref{fig_contours}.
 
-The random catalogue consists of unclustered points whose number density in redshift space mimics the radial selection function of the observational data. 
-To reduce the statistical variance of the estimator we use 50 times as many random points as we have galaxies.
-The galaxies and random points are weighted as described in Sec. \ref{sec:data}.
-
-Figure \ref{fig_2pcfcon} shows the 2D contour of measured $\xi$ as a function of $\mu$ and $s$,
-from the six redshift bins of LOWZ and CMASS samples 
-in the cosmology of $\Omega_m=0.31$ $\Lambda$CDM model.
-%The correlation functions have rather large values on small sales such as $s=5$ $h^{-1}$Mpc,
-%and monotonically decrease to smaller values on larger scales due to weaker clustering.
-Due to the peculiar velocity effect, the contour lines are not horizontal.
-The FOG \citep{FOG} and Kaiser \citep{Kaiser1987} effects 
-clearly manifest themselves through the tilting of contour lines in regions of $\mu \rightarrow 1$ and $1-\mu \gtrsim0.1$, respectively.
-A visual inspection of the contour maps from the six redshift bins 
-reveals that they all have a similar appearance,
-implying small redshift evolution of $\xi$.
-
-\subsection{Probing the anisotropy through 2pCF}
-
-The 2pCF is measured as a function of the separation $s$ and the angular direction $\mu$.
-To probe the anisotropy we are more interested in the dependence of the 2pCF on $\mu$.
-We follow the procedure of \cite{Li2015} and integrate the $\xi$ over the interval $s_{\rm max} \leq s \leq s_{\rm min}$.
-We evaluate
-\begin{equation}\label{eq:xideltas}
-\xi_{\Delta s} (\mu) \equiv \int_{s_{\rm min}}^{s_{\rm max}} \xi (s,\mu)\ ds.%,\ \ \ {\rm at\ particular\ binned\ direction\ }\mu_i
-\end{equation}
-The integration is limited at both small and large scales.
-At small scales the value of $\xi$ is seriously affected by the FOG effect \citep{FOG}
-which depends on the galaxies bias.
-This may introduce a redshift evolution in $\xi_{\Delta s}(\mu)$ that is relatively difficult to model.
-At large scales the measurement is dominated by noise due to poor statistics.
-\cite{Li2015} found that $s_{\rm min}=6-10$ $h^{-1}$Mpc and $s_{\rm max}=40-70$ $h^{-1}$Mpc are reasonable choices 
-which provide consistent, tight and unbiased constraints on cosmological parameters.
-In this analysis we choose $s_{\rm min}=6$ $h^{-1}$Mpc and $s_{\rm max}=40$ $h^{-1}$Mpc.
-
-The redshift evolution of the bias of observed galaxies leads to redshift evolution of the strength of clustering,
-which is difficult to accurately model.
-To mitigate this systematic uncertainty we rely on the shape of $\xi_{\Delta s}(\mu)$, rather than its amplitude,
-\begin{equation}\label{eq:norm}
- \hat\xi_{\Delta s}(\mu) \equiv \frac{\xi_{\Delta s}(\mu)}{\int_{0}^{\mu_{\rm max}}\xi_{\Delta s}(\mu)\ d\mu}.
-\end{equation}
-We impose a cut $\mu<\mu_{\rm max}$ to reduce the fiber collision and FOG effects which are stronger toward the LOS ($\mu\rightarrow1$) direction.
-
-
-
-The clustering properties may be affected by various properties of the galaxy sample, 
-such as, for example the mass, morphology, color, concentration. 
-In our simulation, using the merger tree, 
-we identify ``galaxies'', therefore we only use the galaxy mass building history to simulate BOSS galaxies. 
-Therefore, it is necessary for us to test if our mock galaxies can accurately 
-reproduce the $\hat\xi_{\Delta s}(\mu)$ of observed galaxies.
-
-%The clustering properties may be affected by the redshift evolution of properties of the galaxy sample, 
-%such as the mass, morphology, color, concentration, and so on. 
-%In our simulation, using the merger tree, we identify 'galaxies' so that we only use the galaxy mass to simulate BOSS galaxies. Therefore, it was necessary for us to test if our mock galaxies can accurately reproduce the shape of $\xi_{\Delta s}(\mu)$ of observed galaxies.
-
-%As shown by Figure 6, the mock galaxies from our HR4 simulation can well reproduce the 
-%$\hat\xi_{\Delta s}(\mu)$ of the observed galaxies.
-Figure \ref{fig_datamock}  compares the shape of $\hat\xi_{\Delta s}(\mu)$ measured from observational data and mock survey samples.
-It is clear that $\hat \xi_{\Delta s}(\mu)$ from mock galaxies identified in the HR4 simulation (green dotted line) agrees well with the observation.
-%The HR4 galaxy mock can well reproduce the result from observational measurement.
-The enhancement near $\theta=0^\circ$ is caused by the FOG effect,
-and the characteristic shape in $20^\circ\lesssim\theta\lesssim90^\circ$ 
-produced from the large-scale flow
-are all very well reproduced.
-This result verifies the ability of our mock galaxies to reproduce the clustering properties of the observed galaxies.
-The small overestimate (underestimate) of $\hat\xi_{\Delta s}$ at large (small) $\mu$ could be due to 
-that our mocks galaxies are more massive than those in the observations.
-%methodology. (AMTB: need some good expression; need consult SW)
-%Conversely, the HR3 PSB halo galaxies do not accurately reproduce the observations.
-We use the HR4 galaxy mocks to correct the systematics.
-%The HR3 PSB mock galaxies are used to estimate the covariance of 2pCF since 72 mock survey samples are available.
-
-
-%It is impossible to probe $\hat\xi_{\Delta s}(\mu)$ as a continuous function with infinite degrees of freedom. 
-We divide the full angular range $0\leq\mu\leq\mu_{\rm max}$ into $n_{\mu}$ bins and measure its value in each bin.
-Since we are free to choose $\mu_{\rm max}$ and $n_{\mu}$,
-they are varied to optimize the S/N of our results.
-This topic will be discussed in Sec. \ref{sec:binningscheme}.
-
-\subsection{Characterizing the redshift evolution}
-
-
-As shown in Figure \ref{fig_nbar}, we split the BOSS DR12 galaxies into six redshift bins, three in LOWZ and three in CMASS.
-To study the redshift evolution of the clustering anisotropy 
-we use the {\it first redshift bin} as the reference and compare the measurements in other bins with that in the first.
-We define
-\begin{equation} \label{eq:deltahatxi}
-\delta \hat\xi_{\Delta s}(z_i,z_1,\mu_j)\ \equiv\ \hat\xi_{\Delta s}(z_i,\mu_j) - \hat\xi_{\Delta s}(z_1,\mu_j)
-\end{equation}
-where $\hat\xi_{\Delta s}(z_i,\mu_j)$ is $\hat\xi_{\Delta s}$ measured in the $i$th redshift bin and $j$th $\mu$ bin,
-where $1\leq i \leq 6$ and $1\leq j \leq n_{\mu}$.
-To characterize the shape of the curve well $n_\mu \gtrsim5$ is required.
-
-\subsection{Correction for systematics}\label{sec:syscor}
-
-Other than the AP effect, there are additional effects 
-which may produce redshift-dependent anisotropy and affect the results. 
-
-The observational artifacts, such as fiber collisions, redshift failures, 
-and the non-cosmological density fluctuations with stellar density and seeing,
-are accounted for in the galaxy weights \citep{Reidetal:2016}.
-Fiber collisions and redshift failures may affect the value of $\hat\xi(\mu)$ in the region close to LOS;
-%We correct them by reweighting galaxies, include fiber collisions in the construction of mock surveys,
-we abandon the angular region of $1-\mu<0.01$, 
-to avoid possible systematics (see Appendix \ref{sec:RBtest} for more discussion). 
-
-%The SGC catalogues have higher target density than NGC and 
-%thus a higher galaxy number density, known as the north/south asymmetry.
-The non-contiguous NGC and SGC are less well cross-calibrated with respect to each other 
-than they are internally calibrated \citep{Schlafly2010,SF2011,Parejko2013}.
-We construct the NGC and SGC mock surveys separately to avoid possible systematics.
-The 2pCF analysis is also carried out for the NGC and SGC independently.
-%Also, in this analysis we only look at the radial evolution of clustering properties. 
-The result should be robust as long as each catalogue is well calibrated internally.
-
-
-%The variation in the density of catalogues is not expected to have large effect on our analysis.
-
-%The redshift evolution of AP effect, RSD effect and properties of samples all may lead to non-zero values of $\delta \hat\xi_{\Delta s}$.
-%To measure the signal from the redshift evolution of the AP effect,
-%we estimate the value of $\delta \hat\xi_{\Delta s}$ from the other effects and subtract their contribution
-%(hereafter $\delta\hat\xi_{\Delta s, \rm sys}$) from the total variation.
-
-The apparent anisotropy introduced by RSD is, 
-although greatly reduced by focusing on the redshift evolution, 
-still the most significant systematic effect.
-
-We estimate the value of $\delta \hat\xi_{\Delta s}$ from the systematic effects and subtract their contribution
-(hereafter $\delta\hat\xi_{\Delta s, \rm sys}$) from the total variation.
-The quantity $\delta\hat\xi_{\Delta s, \rm sys}$ is estimated from the HR4 mock galaxies.
-The mock survey sample imitates the SDSS BOSS sample by mimicking
-the survey as close as possible and includes past light cone effects.
-The observational systematics such as the RSD, survey geometry, and shot noise
-are included in the exactly same way as the observation.
-The peculiar velocity perturbs the observed redshift through the relation
-\begin{equation}\label{eq:zvpeu}
-\Delta z = (1+z) \frac{v_{{\rm LOS}}}{c},
-\end{equation}
-where $v_{\rm LOS}$ is the LOS component of the peculiar velocity of galaxies.
-The redshift evolution of galaxy peculiar velocities, 
-resulting from growth of structure,
-causes the anisotropy produced by RSD to have a small redshift evolution; 
-this is the main source of systematic uncertainty in our results. 
-
-We take the HR4 mock galaxy samples and compute $r(z)$ of galaxies in the cosmology under which the simulation is based.
-In this case there is no AP effect. 
-Thus, the measured $\delta \hat\xi_{\Delta s}$ are the redshift evolution purely created by systematics effects.
-They are adopted as the estimation of $\delta\hat\xi_{\Delta s, \rm sys}$,
-and the results are illustrated in Figure \ref{fig_sys}. %shows $\delta\hat\xi_{\Delta s, \rm sys}(z_i,z_1)$ measured from the HR4 mock galaxy samples.
-%Measurements of $\hat\xi_{\Delta s}$ in the 2th to 6th redshift bins are compared with that in the first bin.
-
-For the 1st to 5th redshift bins, $\delta\hat\xi_{\Delta s, \rm sys}(z_i,z_1)\lesssim0.02$,
-indicating a small redshift evolution of the RSD effect and properties of galaxies.
-The only exception is the 6th redshift bin where the values of $\delta\hat\xi_{\Delta s, \rm sys}(z_6,z_1)$ are relatively large.
-The reason for the large values is that the galaxies in that highest redshift bin are significantly more massive than those at lower redshifts,
-so the measured high redshift $\hat\xi_{\Delta s}(\mu)$ has larger (smaller) values at $\mu\rightarrow1$ ($\mu\rightarrow0$) 
-compared with the others
-(an investigation of the dependence of $\hat\xi_{\Delta s}(\mu)$ on galaxy mass is provided in Sec. \ref{sec:caveats}).
-
-%This should be the reason why .
-
-
-\subsection{The caveats}\label{sec:caveats}
-
-%The biggest systematic of our method, like all other applications of AP, is still the RSD problem.
-\cite{Li2014,Li2015} found the RSD effect exhibits a small redshift dependence of $\hat \xi_{\Delta s}(\mu)$, 
-mainly due to the structure growth and the selection effect
-(different galaxy bias at different redshifts).
-In this analysis we use the mock galaxy sample from HR4 to correct this systematics.
-The galaxy assignment scheme of \cite{hong2016} applied to HR4 is very successful in modeling both the 
-large scale Kaiser effect and the small scale FOG effect in nonlinear regions.
-%After correcting the systematic effect of RSD, we obtain reasonable cosmological constraint consistent with all other cosmological probes.
-
-There are two possible caveats in our procedure of the modeling of the RSD effect.
-
-1) The RSD effect is estimated from mock survey samples created in a particular cosmology, 
-i.e., the $\Omega_m=0.26$ $\Lambda$CDM model. %model from WMAP5 observations with .
-If this adopted cosmology is different from the truth, then there could be a systematic bias in the estimation. %of RSD
-We believe that this will not seriously affect our cosmological constraints.
-\cite{Li2014} shows that the redshift dependence of RSD is not sensitive to cosmological parameters.
-Also, the cosmologies adopted in the HR3 and HR4 simulations are consistent with our best-fit cosmological parameters within 1$\sigma$,
-therefore our inferred cosmological constraints should be fairly accurate.
-In a future analysis,
-we will estimate the redshift evolution of the RSD effect from a set of cosmological simulations 
-covering the relevant part of the parameter space.
-This approach will remove the remaining uncertainty associated with the RSD effect, 
-which is already a minor effect in our analysis.
-%the statistical uncertainty of this method could be much smaller,
-%and modeling the RSD effect in a cosmological dependent manner would be necessary.
-
-
-2) The selection effect, i.e., the evolution of galaxy bias with redshifts, 
-can introduce redshift evolution in the clustering properties of the observed galaxies.
-%If that is not accurately modeled, people may worry about systematics. %may suffer from systematic errors.
-%Again, we believe this is not a serious problem for our analysis.
-In our analysis the amplitude of the 2pCF is normalized and only its angular information, 
-the function $\hat \xi_{\Delta s}(\mu)$, is used.
-This function is rather insensitive to the galaxy bias,
-which mainly affects the strength of clustering.
-
-As a test, Figure \ref{fig_2pcf_masscut} shows $\hat \xi_{\Delta s}(\mu)$ measured from a small HR4 galaxy sample with different minimal mass cuts.
-The mock galaxies are taken from the $z=0$ snapshot data within the radius $r<600$ $h^{-1}$Mpc.
-Applying the minimal mass cuts of $1,2,4\times 10^{13} h^{-1} M_{\odot}$, 
-we created three sets of subsamples with number density of 
-$\bar n=4.56,\ 2.10,\ 0.91 \times 10^{-4} ( h^{-1} \rm Mpc)^{-3}$, 
-which roughly covers the scatter of the number density of BOSS DR12 galaxies at $0.15<z<0.7$
-\footnote{The BOSS LOWZ and CMASS galaxies reside in massive haloes 
-with a mean halo mass of $5.2 \times 10^{13} h^{-1} M_{\odot}$ and $2.6 \times 10^{13} h^{-1} M_{\odot}$ \citep{Parejko2013,White2011,Reidetal:2016},
-respectively.
-For CMASS galaxies, when the redshift changes from $z=0.43$ to $0.7$,
-the mean stellar mass varies from $10^{11.6} {M_{\odot}}$ to $10^{11.9} {M_{\odot}}$ \citep{CMASSLSS2014}.}.
-
-
-
-For subsamples with higher mass cuts the $\hat\xi_{\Delta s}(\mu)$
-has larger (smaller) values at $\mu\rightarrow1$ ($\mu\rightarrow0$).
-More massive samples result in less tilted $\hat\xi_{\Delta s}(\mu)$ in the region of $1-\mu\gtrsim0.1$
-\footnote{This phenomenon is understandable.
-The tilt of $\hat\xi_{\Delta s}(\mu)$ is related to the RSD effect, 
-and also the overall amplitude of the 2pCF (the denominator of Eq. (\ref{eq:norm})).
-The slope should be roughly proportional to $(v/b_g)^2$, 
-where the peculiar velocity term $v^2$ denotes the effect of RSD, 
-and the galaxy bias term $b_g^2$ represents the amplitude of the 2pCF. 
-For the more massive sample, $b_g$ is much larger while $v$ is still close to the peculiar velocity of dark matter field,
-%So their curves are less tilted.
-therefore the slope is smaller.
-}.
-This explains the relative large value of $\hat \xi_{\Delta s,\rm sys}(z_6, z_1)$.
-In particular, comparing the subsamples with mass cuts $4\times 10^{13}h^{-1} M_{\odot}$ and $1\times 10^{13}h^{-1} M_{\odot}$, 
-we find the red dotted curve is higher (lower) than the blue solid line at $\mu\rightarrow1$ ($\mu\rightarrow0$),
-with a difference of $\approx$0.1 (0.05),
-consistent with the value of $\hat \xi_{\Delta s,\rm sys}(z_6, z_1)$ shown in Figure \ref{fig_sys}.
-
-In addition, this result also explains the small discrepancy between the $\hat\xi_{\Delta s}(\mu)$ measured from the 
-observational data and the HR4 simulations (Figure \ref{fig_datamock}).
-The mock galaxies could be systematically more massive than the observed ones.
-These systematics could be most significant in the 6th redshift bin
-where mock galaxies are most massive, 
-leading to possible overestimation of $\delta\hat\xi_{\Delta s,{\rm sys}}$.
-We discuss the impact of this effect in Sec. 6.1.
-
-Considering the large variation of mass cuts, the change of $\hat\xi_{\Delta s}(\mu)$ is not significant,
-so we conclude that $\hat\xi_{\Delta s}(\mu)$ is relatively insensitive to the galaxy bias.
-
-
-
-%In addition, Figure 5 of \cite{Li2015} also shows that the peculiar velocities of the halos (PSB halos from HR3) are very insensitive to their masses. 
-%This means the RSD effect coming from galaxies with different biases are similar.
-%So the modeling of RSD effect does not require accurate modeling of the biases of the observed galaxies.
-
-\subsection{$\chi^2$ function}\label{sec:likelihood}
-
-We define a $\chi^2$ function to quantify the redshift evolution of clustering anisotropy
-\begin{equation}\label{eq:chisq1}
-\chi^2\equiv \sum_{i=2}^{6} \sum_{j_1=1}^{n_{\mu}} \sum_{j_2=1}^{n_{\mu}} {\bf p}(z_i,\mu_{j_1}) ({\bf Cov}_{i}^{-1})_{j_1,j_2}  {\bf p}(z_i,\mu_{j_2}),
-\end{equation}
-where ${\bf p}(z_i,\mu_{j})$ is the redshift evolution of clustering, 
-$\hat \xi_{\Delta s}$, with systematic effects subtracted
-\begin{eqnarray}\label{eq:bfp}
- {\bf p}(z_i,\mu_{j}) \equiv&\ \delta \hat\xi_{\Delta s}(z_i,z_1,\mu_j) - \delta \hat\xi_{\Delta s, \rm sys}(z_i,z_1,\mu_j)
-\end{eqnarray}
-${\bf Cov}_i$ is the covariance matrix estimated from the 72 sets of PSB mock galaxies identified from HR3 N-body simulation.
-
-
-
-
-%We find noise in the $\chi^2$ probably due to the low statistic caused by the limited size of the sample and the covmat due to small size of mocks ...
-%So we compute many values of $\chi^2$ using different $n_\mu$ and $\mu_{\rm max}$...
-%The noise in $\chi^2$ shall be statistically random and by taking an average it is suppressed while the physical signal is preserved...
-%We tested the dependence of the result on $\mu_{\rm max}$ and find the result is rather stable within the range $\mu_{\rm max}=0.85 - 0.99$...
-%So we use $\mu_{\rm max} = 0.85, 0.86, ... 0.99$...
-%Increasing $n_\mu$ tighens the constraintm, but in cost of larger noise in the result...
-%Also $n_\mu$ shall be smaller than the number of mocks to compute covmat...
-%So we use $n_\mu = 5, 6, ... 40$...
-%So we define...
-%\begin{equation}\label{eq:chisq2}
-%\bar\chi^2\equiv \frac{ \sum \chi^2(n_\mu,\ \mu_{\rm max}) } {\rm Number\ of\ \chi^2} ... (find a proper way to illustrate this equation)
-%\end{equation}
-
-%{\bf AMTB: We need to give some results on the systematic effects. }
-
-
-
-
-\subsection{Cosmological Constraints}
-
-
-We constrain $\Omega_m$ and $w$ through Bayesian analysis \citep{Bayesian},
-which derives the probability distribution function (PDF) of some parameters $\bf \theta$ (=($\Omega_m,w$) in this paper)
-given observational data $\bf D$, 
-according to Bayes' theorem:
-\begin{equation}
- P({\bf \theta}|{\bf D}) = \frac{P({\bf \theta})P({\bf D}|{\bf \theta})}{m({\bf D})}.
-\end{equation}
-Here $P(\bf \theta)$, the prior distribution of the parameters,
-contains all the information about the parameters known from substantive knowledge 
-and expert opinion {\it before} observing the data.
-The marginal PDF of $\bf D$, 
-$m({\bf D})=\int P({\bf D|\theta})P({\bf \theta})d{\bf \theta}$, 
-is a normalization constant independent of $\theta$.
-All the information about the parameter $\bf \theta$ that stems from the experiment
-is contained in the function $P({\bf D}|{\bf \theta})$, 
-the conditional PDF of the observation $\bf D$ given the value of parameter.
 
 \begin{figure*}
    \centering{
@@ -996,48 +662,22 @@ the conditional PDF of the observation $\bf D$ given the value of parameter.
    %\includegraphics[width=16cm,natwidth=52,natheight=40]{fig10.eps}
    %\includegraphics[width=16cm]{fig10.eps}
    }
-   \caption{\label{fig}
+   \caption{\label{fig9.eps}
    Likelihood contours (68.3\%, 95.4\%) in the $\Omega_m-w$ plane from our method.
    }
 \end{figure*}
 
-In this analysis we simply assume flat priors for $\Omega_m$ and $w$,
-and approximate $P({\bf D}|{\bf \theta})$ by a likelihood function $\mathcal{L}$
-satisfying  $-2 \ln \mathcal{L}=\chi^2$;
-the PDF of $\theta$ derived from our AP method takes the form
-%The PDF cu is approximated by the {\it likelihood} function of $\mathcal{L}\propto \exp\left(-\frac{\chi^2}{2}\right)$.
-%It is approximated by the {\it likelihood} function.
-%So we have
-\begin{equation}
- P({\bf \theta}|{\bf D}) \propto \mathcal{L} \propto \exp\left[-\frac{\chi^2}{2}\right].
-\end{equation}
-We use the {\texttt {COSMOMC}} software \citep{LB2002}
-to obtain the Markov Chain Monte Carlo (MCMC) samples of $\theta$ following the PDF of $P({\bf \theta}|{\bf D})$.
-Constraints on $\Omega_m$ and $w$ are derived from these samples.
-
-The 68\% and 95\% likelihood contours of $\Omega_m$ and $w$ 
-obtained from this analysis are shown in Figure \ref{fig_contours} (pink areas).
-%For comparison, results from some other cosmological probes are also plotted.
-Our AP method yields tight constraints on $\Omega_m$ and $w$ .
-The mean values and 68\% CL are
-\begin{equation}
- \Omega_m=0.314 \pm 0.038,\ \ w = -1.09 \pm 0.14.
-\end{equation}
-This result is consistent with the Planck $\Lambda$CDM cosmology within 1$\sigma$ \citep{Planck2015}.
-
-
-%\bibitem[Blake et al. (2011)]{WiggleZB}
-%Blake, C., Kazin, E.A., Beutler, F., et al.
-%2011, MNRAS, 418, 1707
-%\bibitem[Kazin et al. (2014)]{WiggleZK}
-%Kazin, E.A., Koda, J., Blake, C., et al.
-%2014, MNRAS, 441, 352
-
-
-
+We get tight constraint on the two paramters.
+The 2$\sigma$ contour lies within the region $0.23<\Omega_m<0.285$, $-1.1<w<-0.9$.
+The thin shape of contour means, when combining with the another observational data with different direction of degeneracy (e.g. CMB),
+very tight combined constraint can be obtained.
+In case of fixing one parameter at its best-fit value and infer the statistical uncertainty of the other one,
+one will obtain 1$\sigma$ uncertainty of $\delta\Omega_m\approx0.002,\delta w\approx0.01$. 
 
 
 \section{Concluding Remarks}
+
+
 
  * Can be combined with our redshift dependence of AP to full explore the geometric effects in LSS
 
