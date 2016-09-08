@@ -245,8 +245,8 @@ We conclude in \S 5.
    and obtains wrong results (the red solid lines).
    %The red solid lines show their positions and shapes when the wrong cosmologies 
    % are assumed to compute distance from measured redshift.
-   %The misestimation of angular diameter distance lead to wrong 
-   Right panel shows the misestimation of angular diameter distance when the wrong cosmologies are adopted.
+   %The mis-estimation of angular diameter distance lead to wrong 
+   Right panel shows the mis-estimation of angular diameter distance when the wrong cosmologies are adopted.
    %In our mock surveys we split the samples at $z=0.3$, 0.6, 0.9 and 1.2, as marked by the vertical lines.
    %measured by an observer located at the origin.
    %For reference, blue dashed squares show their shapes and positions in the true cosmology.
@@ -256,17 +256,17 @@ We conclude in \S 5.
 
 %Considering we are Let us consider an object in the universe with certain size and shape.
 %Its observed redshift span $\Delta z$ and angular size $\Delta \theta$ are related with the comoving sizes by
-In this section we briefly introduce the scaling effect in wrongly assumed cosmologies.
+In this section we briefly introduce the scaling effect caused by wrongly assumed cosmological parameters.
 A more detailed description has been provided in \cite{Li2014,Li2015,Li2016}.
 
-Suppose that we are probing the shape of some objects in the Universe.
+Suppose that we are probing the size of some objects in the Universe.
 We measure its redshift span $\Delta z$ and angular size $\Delta \theta$,
-then compute its sizes in the radial and transverse directions from the relations of 
+then compute its sizes in the radial and transverse directions using the following formulas
 \begin{equation}\label{eq:distance}
 \Delta r_{\parallel} = \frac{c}{H(z)}\Delta z,\ \ \Delta r_{\bot}=(1+z)D_A(z)\Delta \theta,
 \end{equation}
-where $H$ is the Hubble parameter, $D_A$ is the angular diameter distance.
-In the particular case of a flat universe with constant dark energy EoS, they take the forms of
+where $H$ is the Hubble parameter and $D_A$ is the angular diameter distance.
+In the particular case of a flat universe composed by a cold dark matter component and a constant EoS dark energy component, they take the forms of
 \begin{eqnarray}\label{eq:HDA}
 & &H(z) = H_0\sqrt{\Omega_ma^{-3}+(1-\Omega_m)a^{-3(1+w)}},\nonumber\\
 & &D_A(z) = \frac{1}{1+z}r(z)=\frac{1}{1+z}\int_0^z \frac{dz^\prime}{H(z^\prime)},
@@ -274,58 +274,60 @@ In the particular case of a flat universe with constant dark energy EoS, they ta
 where $a=1/(1+z)$ is the cosmic scale factor,
 $H_0$ is the present value of Hubble parameter and $r(z)$ is the comoving distance.
 
-In case we adopted a wrong set of cosmological parameters in Equation (\ref{eq:distance},\ref{eq:HDA}),
+In case wrong values of $\Omega_m$ and $w$ are adopted, 
 the inferred $\Delta r_{\parallel}$ and $\Delta r_{\bot}$ are wrong,
-resulting in distorted shape (AP effect) and wrongly estimated volume (volume effect).
-These effects have been discussed in \cite{Li2014,Li2015,Li2016}.
-This paper we focus on the misestimation of $\Delta r_{\bot}$,%scaling of angular size,
-which can be described by the following quantities
+resulting in wrong estimation in the object's shape (AP effect) and size (volume effect).
+These effects and their cosmological consequences have been investigated in \cite{Li2014,Li2015,Li2016}.
+
+In this paper we focus on the mis-estimation of the angular size $\Delta r_{\bot}$. %scaling of angular size,
+The ratio of mis-estimation is
 \begin{equation}\label{eq:DA}
  %{\rm Degree\ of\ volume\ magnification \equiv}
  %{\rm rat}_{\rm volume\ mag}\equiv
  \alpha_{\bot} \equiv \frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}
  = \frac{D_{A, \rm wrong}}{D_{A, \rm true}},
 \end{equation}
-where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology and wrongly assumed cosmology.
+where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology and wrongly assumed cosmologies, respectively.
 
-The effects due to wrongly assumed cosmological parameters are shown in the upper panel of Figure \ref{fig_xyquan}.
-Suppose that the true cosmology is a flat $\Lambda$CDM with present density parameter $\Omega_m=0.26$
+An illustration is provided in the left panels of Figure \ref{fig_xyquan}.
+Suppose that the true cosmology is a flat $\Lambda$CDM with present matter ratio $\Omega_m=0.26$
 and standard dark energy EoS $w=-1$.
-If we were to distribute a series of perfect squares at various distances from 500 Mpc/h to 3\,000 Mpc/h,
-and an observer located at the origin were to measure their redshifts and compute their positions and shapes 
-using redshift-distance relations of four incorrect cosmologies
+If we were to distribute a series of perfect squares at various distances ranging from 500 Mpc/h to 3\,000 Mpc/h,
+and an observer located at the origin were to measure their redshifts and infer the sizes of the squares
+using the distance-redshift relations of four incorrect cosmologies
 \begin{eqnarray}
  & &{\rm (i)}.\ \Omega_m=0.40,\ w=-1.0, \nonumber \\ 
  & &{\rm (ii)}.\ \Omega_m=0.15,\ w=-1.0, \nonumber\\ \noindent
  & &{\rm (iii)}.\ \Omega_m=0.26,\ w=-0.5,\nonumber\\ \noindent
  & &{\rm (iv)}.\ \Omega_m=0.26,\ w=-1.5, \nonumber \noindent
 \end{eqnarray}
+as a result, 
 the shapes of the squares appear distorted (AP effect),
-and their volumes are changed (volume effect).
-In the cosmological models in model (i,iii) we see a compression of size (in both angular and LOS direction)
-and the degree of compression increases with increasing distance,
-while in models (ii,iv) we see stretch of size whose degree also evolves with redshift.
-Thus, when wrong cosmological parameters are adopted,
-the apparent size of objects are distorted, and the magnitude of distortion also varies with redshift.
+and their sizes are wrongly estimated (volume effect).
+Cosmological models (i,iii) yield to compressed size (in both angular and LOS direction),
+and the degree of compression increases with increasing distance;
 
-In this paper we will use the galaxy angular 2pCF to probe the redshift dependence of the distortion in angular direction.
-In the right panel of Figure \ref{fig_xyquan} we plot the redshift dependence of the change in angular size, 
-${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$, in the four wrong cosmologies.
-In all cosmologies, there is clear evolution of ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$ 
-in the redshift range $0<z<2$.
-E.g., when use the quintessence cosmology 
-$\Omega_m=0.26,\ w=-0.5$ to infer the postions of objects,
+The mis-estimation of angular size, ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$, 
+are displayed in the right panel of Figure \ref{fig_xyquan}.
+All cosmologies, ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$ evolves a lot in the redshift range $0<z<2$.
+As an example, when adopting the quintessence cosmology $\Omega_m=0.26,\ w=-0.5$,
 the angular size is underestimated by 
 %12.5\%, 17.7\%, 20.1\%, 21.3\%
 8.9\%, 12.3\%, 13.6\%, 14.1\% 
 at $z=0.5,1,1.5,2$.
 
+%Thus, when wrong cosmological parameters are adopted,
+%the apparent size of objects are distorted, and the magnitude of distortion also varies with redshift.
 
+In sum, as a consequence of incorrectly adopted cosmologies, 
+the size of the objects is mis-estimated and the magnitude of mis-estimation depends on the redshift.
+In this paper we use the galaxy angular 2pCF to probe the mis-estimation of angular size ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$.
 
 
 \section{The Simulation Data}\label{sec:data}
 
-We test the method on the Horizon Run 4  (HR4) simulation \citep{hr4}.
+We test the idea on the mock galaxy samples provided by the Horizon Run 4  (HR4) N-body simulation \citep{hr4}.
+(Check Cris's revision on BOSS AP paper!!!!)
 HR4 used $N=6300^3$ particles in a box size of $L={3150}$ $h^{-1}$Mpc.  
 It adopted the second order Lagrangian perturbation theory (2LPT) initial conditions at $z_{i}=100$
 and a WMAP5 cosmology $(\Omega_{b},\Omega_{m},\Omega_\Lambda,h,\sigma_8,n_s)$  = (0.044, 0.26, 0.74, 0.72, 0.79, 0.96) \citep[]{komatsu 2011}.
@@ -494,7 +496,7 @@ the stretch of size makes the slope shallower at higher redshfits.
 
 \subsection{Systematic effects}
 
-The same as \cite{Li2014,Li2015,Li2016} we need to correct for the redshift evolution of $r\xi$ caused by effects other than the wrongly assumed cosmological parameters.
+The same as \cite{Li2014,Li2015,Li2016} we need to correct for the redshift evolution of $r\xi$ caused by effects other than the cosmological effect.
 
 Figure \ref{fig_diffz} already shows that, the growth of structure, especially in low redshift and on non-linear scales, 
 changes the shape of $r\xi$ and caused relative enhancement on $r\lesssim2 h^{-1}\rm Mpc$.
@@ -676,19 +678,15 @@ one will obtain 1$\sigma$ uncertainty of $\delta\Omega_m\approx0.002,\delta w\ap
 
 
 \section{Concluding Remarks}
-
-
-
+ 
  * Can be combined with our redshift dependence of AP to full explore the geometric effects in LSS
-
- * *** utilizes angular 2pCF as a function of redshift. Our method is complementary to it: 1) smaller scales; 2) more bins; 3) could be less affected by RSD; ... In case of good modelling of RSD one can rely on their; in case not possible, especially on small scales, one can use ours
-
+ 
+ *  *** utilizes angular 2pCF as a function of redshift. Our method is complementary to it: 1) smaller scales; 2) more bins; 3) could be less affected by RSD; ... In case of good modelling of RSD one can rely on their; in case not possible, especially on small scales, one can use ours
+ 
  * Complementary to all other LSS probes
-
+ 
  * Promising future
-
-
-
+ 
 \section*{Acknowledgments}
 
 We thank the Korea Institute for Advanced Study for providing computing resources (KIAS Center for Advanced Computation Linux Cluster System).
@@ -698,7 +696,6 @@ This work was partially supported by the
 Supercomputing Center/Korea Institute of Science and
 Technology Information with supercomputing resources
 including technical support (KSC-2013-G2-003).
-
 
 \appendix
 
