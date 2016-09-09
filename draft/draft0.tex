@@ -106,7 +106,7 @@ the galaxy angular 2-point correlation function}
 \affil{University of Chinese Academy of Sciences, P.R. China}
 \author{Changbom Park,}
 \affil{School of Physics, Korea Institute for Advanced Study, 85 Heogiro, Dongdaemun-gu, Seoul 130-722, Korea}
-\author{Cristiano G. Sabiu, Hyunbae Park,}
+\author{Hyunbae Park, Cristiano G. Sabiu, }
 \affil{Korea Astronomy and Space Science Institute, Daejeon 305-348, Korea}
 %\author{David H. Weinberg,}
 %\affil{Department of Astronomy and CCAPP, The Ohio State University, 140 West 18th Avenue, Columbus, OH 43210, USA}
@@ -227,7 +227,7 @@ In \S 4, we describe our new analysis method for quantifying the redshift depend
 We conclude in \S 5.
 
 
-\section{Geometric deformation when }
+\section{Volume Effect in a Nutshell}
 \label{sec:Voleffect}
 
 \begin{figure*}
@@ -263,7 +263,7 @@ Suppose that we are probing the size of some objects in the Universe.
 We measure its redshift span $\Delta z$ and angular size $\Delta \theta$,
 then compute its sizes in the radial and transverse directions using the following formulas
 \begin{equation}\label{eq:distance}
-\Delta r_{\parallel} = \frac{c}{H(z)}\Delta z,\ \ \Delta r_{\bot}=(1+z)D_A(z)\Delta \theta,
+\Delta r_{\parallel} = \frac{c}{H(z)}\Delta z,\ \ \Delta r_{\perp}=(1+z)D_A(z)\Delta \theta,
 \end{equation}
 where $H$ is the Hubble parameter and $D_A$ is the angular diameter distance.
 In the particular case of a flat universe composed by a cold dark matter component and a constant EoS dark energy component, they take the forms of
@@ -275,16 +275,16 @@ where $a=1/(1+z)$ is the cosmic scale factor,
 $H_0$ is the present value of Hubble parameter and $r(z)$ is the comoving distance.
 
 In case wrong values of $\Omega_m$ and $w$ are adopted, 
-the inferred $\Delta r_{\parallel}$ and $\Delta r_{\bot}$ are wrong,
+the inferred $\Delta r_{\parallel}$ and $\Delta r_{\perp}$ are wrong,
 resulting in wrong estimation in the object's shape (AP effect) and size (volume effect).
 These effects and their cosmological consequences have been investigated in \cite{Li2014,Li2015,Li2016}.
 
-In this paper we focus on the mis-estimation of the angular size $\Delta r_{\bot}$. %scaling of angular size,
+In this paper we focus on the mis-estimation of the angular size $\Delta r_{\perp}$. %scaling of angular size,
 The ratio of mis-estimation is
 \begin{equation}\label{eq:DA}
  %{\rm Degree\ of\ volume\ magnification \equiv}
  %{\rm rat}_{\rm volume\ mag}\equiv
- \alpha_{\bot} \equiv \frac{\Delta r_{\bot, \rm wrong}}{\Delta r_{\bot, \rm true}}
+ \alpha_{\perp} \equiv \frac{\Delta r_{\perp, \rm wrong}}{\Delta r_{\perp, \rm true}}
  = \frac{D_{A, \rm wrong}}{D_{A, \rm true}},
 \end{equation}
 where ``true'' and ``wrong'' denote the values of $D_A$ in the true cosmology and wrongly assumed cosmologies, respectively.
@@ -299,7 +299,7 @@ using the distance-redshift relations of four incorrect cosmologies
  & &{\rm (i)}.\ \Omega_m=0.40,\ w=-1.0, \nonumber \\ 
  & &{\rm (ii)}.\ \Omega_m=0.15,\ w=-1.0, \nonumber\\ \noindent
  & &{\rm (iii)}.\ \Omega_m=0.26,\ w=-0.5,\nonumber\\ \noindent
- & &{\rm (iv)}.\ \Omega_m=0.26,\ w=-1.5, \nonumber \noindent
+ & &{\rm (iv)}.\ \Omega_m=0.26,\ w=-1.5,  \nonumber \noindent 
 \end{eqnarray}
 as a result, 
 the shapes of the squares appear distorted (AP effect),
@@ -307,9 +307,9 @@ and their sizes are wrongly estimated (volume effect).
 Cosmological models (i,iii) yield to compressed size (in both angular and LOS direction),
 and the degree of compression increases with increasing distance;
 
-The mis-estimation of angular size, ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$, 
+The mis-estimation of angular size, ${\Delta r_{\perp, \rm wrong}}/{\Delta r_{\perp, \rm true}}$, 
 are displayed in the right panel of Figure \ref{fig_xyquan}.
-All cosmologies, ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$ evolves a lot in the redshift range $0<z<2$.
+All cosmologies, ${\Delta r_{\perp, \rm wrong}}/{\Delta r_{\perp, \rm true}}$ evolves a lot in the redshift range $0<z<2$.
 As an example, when adopting the quintessence cosmology $\Omega_m=0.26,\ w=-0.5$,
 the angular size is underestimated by 
 %12.5\%, 17.7\%, 20.1\%, 21.3\%
@@ -321,71 +321,87 @@ at $z=0.5,1,1.5,2$.
 
 In sum, as a consequence of incorrectly adopted cosmologies, 
 the size of the objects is mis-estimated and the magnitude of mis-estimation depends on the redshift.
-In this paper we use the galaxy angular 2pCF to probe the mis-estimation of angular size ${\Delta r_{\bot, \rm wrong}}/{\Delta r_{\bot, \rm true}}$.
+In this paper we use the galaxy angular 2pCF to probe the mis-estimation of angular size ${\Delta r_{\perp, \rm wrong}}/{\Delta r_{\perp, \rm true}}$.
 
 
 \section{The Simulation Data}\label{sec:data}
 
-We test the idea on the mock galaxy samples provided by the Horizon Run 4  (HR4) N-body simulation \citep{hr4}.
-(Check Cris's revision on BOSS AP paper!!!!)
-HR4 used $N=6300^3$ particles in a box size of $L={3150}$ $h^{-1}$Mpc.  
-It adopted the second order Lagrangian perturbation theory (2LPT) initial conditions at $z_{i}=100$
-and a WMAP5 cosmology $(\Omega_{b},\Omega_{m},\Omega_\Lambda,h,\sigma_8,n_s)$  = (0.044, 0.26, 0.74, 0.72, 0.79, 0.96) \citep[]{komatsu 2011}.
-The particle mass is $\simeq m_{p} \simeq 9.02 \times 10^9 \hMsun$.
+We test the method using the mock galaxy samples produced by the Horizon Run 4  (HR4) N-body simulation \citep{hr4,hong2016}.
+
+HR4 was made within a cube of volume $({3.15}\ h^{-1}\rm Gpc)^3$ using  $6300^3$ particles with mass $m_p\simeq 9 \times 10^9 \hMsun$.
+The simulation adopted the second order Lagrangian perturbation theory (2LPT) initial conditions at $z_{i}=100$
+and a WMAP5 cosmology $(\Omega_{b},\Omega_{m},\Omega_\Lambda,h,\sigma_8,n_s)$  = (0.044, 0.26, 0.74, 0.72, 0.79, 0.96) \citep{komatsu 2011}.
+%The particle mass is $\simeq m_{p} \simeq 9.02 \times 10^9 \hMsun$.
 %This starting redshift, combined  with 2LPT initial conditions, ensures an accurate mass function and power spectrum \citep{2014NewA...30...79L}. 
 
-Mock galaxy samples are produced from the simulation based on a modified one-to-one correspondence scheme \citep{hong2016}. 
-The most bound member particles (MBPs) of simulated halos are adopted as the tracer of galaxies,
-and the merger timescale is computed to get the lifetime of merged halos.
-Merger trees of simulated halos are constructed by tracking their MBPs from $z = 12$ to 0.
-When a merger event occurs, we adopt the formular of \cite{jiang2008} to calculate the merger timescale 
-and determine when a satellite galaxy is completely disrupted.
+Mock galaxies are produced from the simulation based on a modified one-to-one correspondence scheme \citep{hong2016}. 
+The most bound member particles (MBPs) of simulated halos are adopted as tracers of galaxies.
+The merger timescale is computed to get the lifetime of merged halos.
+Merger trees of halos are constructed by tracking their MBPs from $z = 12$ to 0;
+when a merger event occurs, the merger timescale is computed using the formular of \cite{jiang2008} to 
+determine when the satellite galaxy is completely disrupted.
 %We modeled the position and the velocity of a galaxy from the position and velocity of its corresponding MBP.
 %By using the abundance matching, 
 %we modeled the luminosity of a central/isolated galaxies from their current mass
 %and of satellite galaxies from their mass at the time of infall.
 
-\cite{hong2016} compared the 2pCF of the SDSS DR7 volume-limited galaxy sample \citep{zehavi2011} and the HR4 $z=0$ mock galaxies.
-%When a typical subhalo-galaxy correspondence scheme is applied, 
-%the 2pCF from our simulation is smaller than the observation and does not show a proper Finger-of-God (FOG) feature in our simulation resolution. 
-%We found that %the %2pCF of our galaxy sample agrees well with the observation.
+The resulting mock galaxies was found to reproduce the 2pCF of SDSS DR7 volume-limited galaxy sample \citep{zehavi2011} very well \citep{hong2016}.
 The mock galaxies shows a similar finger of god (FOG) feature \citep{FOG} as the observation.
-On scales greater than 1 ${h^{-1}}$Mpc., 
-the projected 2pCF of the mock and observational samples agree within 1$\sigma$ deviation.
+The projected 2pCF of the mock and observational samples agree within 1$\sigma$ CL
+on scales greater than 1 ${h^{-1}}$Mpc.
 
 %As will be introduced in the next section, 
-The output of HR4 simulation includes one all-sky light cone mock galaxy catalogue reaching $r=3\,150$ ${h^{-1}}$Mpc 
-and a series ({\bf how many?}) of snapshot mock galaxy catalogues at different redshifts.
-In this paper we use five snapshot data at $z=0,0.5,1,1.5,2$.
-We require subhalos to have at least 30 member particles, 
-so the minimal mass of galaxies is $\simeq m_{p} \simeq 2.7 \times 10^{11} \hMsun$.
-At the five redshifts, we get a number of
+%The output of HR4 simulation includes one all-sky light cone mock galaxy catalogue reaching $r=3\,150$ ${h^{-1}}$Mpc 
+%and a series ({\bf how many?}) of snapshot mock galaxy catalogues at different redshifts.
+In this analysis we use snapshot data of HR4 galaxies at $z=0,0.5,1,1.5,2$.
+%We require subhalos to have at least 30 member particles, 
+%so the minimal mass of galaxies is $\simeq m_{p} \simeq 2.7 \times 10^{11} \hMsun$.
+Setting a minimal halo mass of $3\times 10^{11} \hMsun$, 
 %$4.57\times 10^8$, $4.06\times 10^8$, $3.52\times 10^8$, $3.06\times 10^8$ and $2.28 \times 10^8$ mock galaxies,
-457, 406, 352, 206 and 228 million mock galaxies,
+we select 457, 406, 352, 206 and 228 million mock galaxies at the five redshifts,
 corresponding to a number density of 
 %$1.46\times 10^{-2}$, $1.30\times 10^{-2}$, $1.13\times 10^{-2}$, $0.98\times 10^{-2}$ and $0.73\times 10^{-2}\ (h^{-1} \rm Mpc)^{-3}$,
 1.46, 1.30, 1.13, 0.98 and 0.73 in unit of $ 10^{-2} h^{3} \rm Mpc^{-3}$,
 %$1.46\times 10^{-2}$, $1.30\times 10^{-2}$, $1.13\times 10^{-2}$, $0.98\times 10^{-2}$ and $0.73\times 10^{-2}\ (h^{-1} \rm Mpc)^{-3}$,
 respectively.
+By applying a uniform mass cut, at higher redshift we are selecting less galaxies with larger galaxy bias.
 
-\section{Galaxy angular 2pCF}
+As an illustration, Figure \ref{fig_scatter} displays the 2D distribution of a subsample of mock galaxies in five redshifts,
+with $x$, $y$ coordinates computed using the ``correct'' values of cosmological parameters $\Omega_m=0.26,\ w=-1$ (left panels) 
+and a wrong set of cosmological parameters $\Omega_m=0.05,\ w=-1.5$ (right panels), respectively.
 
-\subsection{Galaxy distribution at different redshifts}
+When the correct cosmology is adopted the cosmic scale is correctly estimated in five redshifts.
+The only factor leads to evolution of galaxy distribution with redshift is the gravitational growth of structure.
+With the decreasing the redshift, we clearly see how the clusters and filaments form and grow.
+On the other hand, when the wrong cosmology is adopted, there is an artifical scaling of scales in the constructed map.
+The separations among galaxies are over-estimated by 
+$25.6\%,47.3\%,62.2\%,71.7\%$ at redshifts of $0.5,1.0,1.5,2.5$,
+leading to a clear evolution of the sizes of structures with redshift.
 
-The left panels of Figure \ref{fig_scatter} show the $x,y$ coordinates of galaxies in a 
-$260 h^{-1} {\rm Mpc} \times 130 h^{-1} {\rm Mpc} \times 105 h^{-1} {\rm Mpc}$ volume, 
-taken from the five snapshots.
-The gravitational growth of structures with decreasing redshift is clearly shown.
-We display all mock galaxies with $M> 3.0 \times 10^{11} \hMsun$.
-At lower redshift, galaxies become more massive, so they are more galaxies satisfying the threshold.
+The growth of structure leads to growth of clustering strength of structures on all scales,
+while the volume effect maintain the clustering pattern and uniformly re-scale all the structures.
+Their imprints on the large scale structure is different and should be distinguishable in the statistical analysis.
+In the following, we show that they affect the angular correlation function measurements in different ways, 
+and can be easily separated.
 
-If one adopts a wrong cosmology to compute galaxy positions, there would be a scaling of the galaxy distribution.
-In the left panel we show the case when a wrong set of parameters $\Omega_m=0.05,\ w=-1.5$ is assumed,
-leading to large upscaling of $25.6\%,47.3\%,62.2\%,71.7\%$ at redshifts $z=0.5,1.0,1.5,2.5$.
+%The growth of structure also make the size of structures evolves with redshift.
+%In the next subsection we will discuss how to distinguish these two effects in the galaxy angular 2pCF.
 
-Compared with the true galaxy distribution, the apparent distribution inferred by wrong set of parameters
-show clear evolution with redshift due to the different scaling at different redshifts.
-In case of Figure \ref{fig_scatter}, the apparent size of large scale structures increases with redshift.
+
+%The left panels of Figure \ref{fig_scatter} show the $x,y$ coordinates of galaxies in a 
+%$260 h^{-1} {\rm Mpc} \times 130 h^{-1} {\rm Mpc} \times 105 h^{-1} {\rm Mpc}$ volume, 
+%taken from the five snapshots.
+%The gravitational growth of structures with decreasing redshift is clearly shown.
+%We display all mock galaxies with $M> 3.0 \times 10^{11} \hMsun$.
+%At lower redshift, galaxies become more massive, so they are more galaxies satisfying the threshold.
+
+%If one adopts a wrong cosmology to compute galaxy positions, there would be a scaling of the galaxy distribution.
+%In the left panel we show the case when a wrong set of parameters $\Omega_m=0.05,\ w=-1.5$ is assumed,
+%leading to large upscaling of $25.6\%,47.3\%,62.2\%,71.7\%$ at redshifts $z=0.5,1.0,1.5,2.5$.
+
+%Compared with the true galaxy distribution, the apparent distribution inferred by wrong set of parameters
+%show clear evolution with redshift due to the different scaling at different redshifts.
+%In case of Figure \ref{fig_scatter}, the apparent size of large scale structures increases with redshift.
 
 The growth of structure also make the size of structures evolves with redshift.
 In the next subsection we will discuss how to distinguish these two effects in the galaxy angular 2pCF.
@@ -395,13 +411,38 @@ In the next subsection we will discuss how to distinguish these two effects in t
    %\includegraphics[height=5.9cm]{fig8_0.eps}
    %\includegraphics[height=5.9cm]{fig8_wrongcos_0.eps}
    %\includegraphics[width=16cm]{fig2.eps}
-   \includegraphics[width=16cm,natwidth=8,natheight=14]{fig2.pdf}
+   %\includegraphics[width=16cm,natwidth=8,natheight=14]{fig2.pdf}
+   \includegraphics[width=16cm]{fig2.eps}
    }
    \caption{\label{fig_scatter}
   blah
    }
    % Need a better plot to show angular size variation!!!
 \end{figure*}
+
+\section{Methodology}
+
+%\subsection{Galaxy distribution at different redshifts}
+
+We use the angular 2pCF as a statistical tool to probe the volume effect.
+The galaxy 2pCF as a function of galaxy separation in the angular direction, $\omega(r_\perp)$, is computed for snapshot data of mock galaxies at five redshifts.
+We adopt the Landy-Szalay estimator~\citep{1993ApJ...412...64L},
+\begin{equation}
+\omega(r_\perp)=\frac{DD-2DR+RR}{RR}\ ,
+\end{equation}
+where $DD$ is the number of galaxy--galaxy pairs, 
+$DR$ the number of galaxy-random pairs, 
+and $RR$ is the number of random--random pairs, 
+all separated by a distance defined by $r_\perp\pm\Delta_{r_\perp}$ where we choose $\Delta_{r_\perp}=1h^{-1}\rm Mpc$.
+The random catalogue consists of unclustered points uniformly distributed in a same size box. 
+In an effort to reduce the statistical variance of the estimator, we use 50 times as many random points as we have galaxies.
+
+Considering the large number of galaxies and random points the 2pCF is computed part by part in subsamples with 
+size of 1575 $h^{-1}{\rm Mpc}\times 1575\ h^{-1}{\rm Mpc}\times 105\ h^{-1}{\rm Mpc}$.
+The Z direction with thickness $105\ h^{-1}\rm Mpc$ is treated as the radial direction and the X, Y direction with width $1575 h^{-1}\ \rm Mpc$ are treated as the angular plane.
+In our simulation box we can have 120 such subsamples.
+The average of the measurements in all subsamples is adopted as the 2pCF of the whole sample,
+while the covariances of them are adopted as the covariance matrix after multiplying a factor of $1/\sqrt{119}$.
 
 
 \subsection{Galaxy angular 2pCF: amplitude and shape at different redshifts}
@@ -421,37 +462,44 @@ In the next subsection we will discuss how to distinguish these two effects in t
    }
 \end{figure*}
 
-The left panel of Figure \ref{fig_diffz} displays the measured angular 2pCF of galaxies (multiplied by scale $r$) in the five snapshot.
+The upper-left panel of Figure \ref{fig_diffz} displays the angular 2pCF measured from HR4 mock galaxies. % (multiplied by scale $r$) in the five snapshot.
+We multiply $\omega$ by the separation $r_\perp$ to have similar amount of statistical uncertainty on all scales.
 
-The amplitude of 2pCF is crucially affected by the cosmic structure growth and the galaxy bias.
-%The amplitude is higher at $z=0$, 
-We find $\xi(z=0)>\xi(z=0.5)>\xi(z=1)$.
-At low redshift, the large scale structures experienced most gravitational growth,
-leading to stronger clustering strength and higher amplitude of 2pCF.
-On the contrary, at higher redshift we find $\xi(z=2)>\xi(z=1.5)>\xi(z=1)$,
+At different redshifts, we see large evolution in the amplitude of $\omega(r_\perp)$.
+The amplitude of 2pCF is proportional to the clustering strengh which is affected by the gravitational growth of structures and the bias of the galaxies.
+The amplitude is highest at $z=0$ where the large scale structures experienced most gravitational growth,
+and also gets higher at $z>1$ with increasing redshift as a reason of more biased galaxies at higher redshift.
+%leading to stronger clustering strength and higher amplitude of 2pCF.
+%On the contrary, at higher redshift we find $\omega(z=2)>\omega(z=1.5)>\omega(z=1)$,
 %The trend is different from $z=1,1.5,2$,
-simply because by applying a uniform mass cut we are selecting more biased galaxies at higher redshift.
+%simply because by applying a uniform mass cut we are selecting more biased galaxies at higher redshift.
 
-Different from the large variation of amplitude among the different redshifts, %The shape of $r\xi$ also evolves with redshift.
-the shape of 2pCF maintains similar at all redshifts. 
-At all redshifts, we see the $r\xi$ peaks at $r\sim9 h^{-1}\rm Mpc$,
-and monotonically drops at larger or smaller scales.
-The only exception is the relative enhancement of 2pCF at $r\lesssim 2 h^{-1}\rm Mpc$,
+Different from the large variation of amplitude among the different redshifts, %The shape of $r_\perp\omega$ also evolves with redshift.
+the shape of $r_\perp\omega$ maintains similar at all redshifts;
+it always peaks at $r\sim9 h^{-1}\rm Mpc$ and monotonically drops at larger or smaller scales.
+The only exception is the small enhancement at $r\lesssim 2 h^{-1}\rm Mpc$,
 which is caused by the non-linear growth of structures on small scales 
-and becomes more dramatic at lower redshfit.
+and is much more significant at lower redshfit.
 
-The middle panel of Figure \ref{fig_diffz} displays the $r\xi$ normalized by the overall amplitude within $5h^{-1}{\rm Mpc} < r < 50h^{-1}{\rm Mpc}$
-(here after $\hat r\xi$).
-The nice overlapping of the results from five redshifts 
-suggests small evolution of shape with redshift.
-In the right panel, we compare the high redshift $\hat r\xi$ 
-to the $z=0$ result.
-There is 1-4\% relative enhancement 
+In order to directly compare the shape of 2pCF at different redshifts,
+in the middle panel of Figure \ref{fig_diffz} we show the $r_\perp\omega$ normalized by the overall amplitude within $5h^{-1}{\rm Mpc} < r < 50h^{-1}{\rm Mpc}$
+(here after $\hat r_\perp\omega$).
+The nice overlapping of the five redshift results
+justify the small evolution of shape with redshift.
+In the right panel, we further show the residual evolution of $\hat r_\perp\omega$ at high redshifts 
+with respect to $z=0$.
+There is only 1-4\% relative enhancement 
 at $r<10h^{-1}\rm Mpc$,
 and $<1.5\%$ relative suppression at $r>25 h^{-1}\rm Mpc$.
 The trend is monotonic with redshift.
 
-In all, we conclude that the shape of the 2pCF is more robust than the amplitude against redshift and galaxy bias.
+As shown by Figure \ref{fig_scatter}, the gravitational growth of strucutre enhance the clustering strengh of structures on all scales;
+here it manifests itself as an enhanced amplitude of 2pCF at low redshift.
+The shape of 2pCF, which represents the {\it relative strength of clustering among different scales},
+maintain similar with redshift except the non-linear scales of $r_\perp < 5 h^{-1}\rm Mpc$.
+%mainly increases the amplitude of 
+
+%In all, we conclude that the shape of the 2pCF is more robust than the amplitude against redshift and galaxy bias.
 
 \subsection{Galaxy angular 2pCF: in wrong cosmologies }
 
@@ -460,35 +508,35 @@ the galaxy distribution is artificially scaled.
 This scaling is expected to change the shape of the 2pCF,
 following the relationship,
 \begin{equation}
- \hat \xi_{\rm wrong}(r) = \hat\xi_{\rm true}(\alpha_{\bot} r),
+ \hat \omega_{\rm wrong}(r) = \hat\omega_{\rm true}(\alpha_{\perp} r),
 \end{equation}
-a simple consequence of the fact that clustering patterns at distance $r$ now appears on a the scale $\alpha_{\bot} r$.
-The redshift evolution of $\alpha_{\bot}$ leads to redshfit evolution of shape.
+a simple consequence of the fact that clustering patterns at distance $r$ now appears on a the scale $\alpha_{\perp} r$.
+The redshift evolution of $\alpha_{\perp}$ leads to redshfit evolution of shape.
 
 
-Lower panels of Figure \ref{fig_diffz} shows the $r\xi$ in five 
+Lower panels of Figure \ref{fig_diffz} shows the $r_\perp\omega$ in five 
 snapshots, in case that the cosmology $\Omega_m=0.05,\ w=-1.5$ 
 is adopted to construct the galaxy distribution (the right panels of Figure \ref{fig_scatter}).
-The middle panel displays the clear redshift evolution of shape of $r\xi$.
+The middle panel displays the clear redshift evolution of shape of $r_\perp\omega$.
 E.g, from $z=0$ to $z=2$,
 the peak location is shifted from $r=9h^{-1} \rm Mpc$ to $r\sim15 h^{-1}\rm Mpc$ at $z=2$
 since the angular separation is upscaled by $71.7\%$.
 
 The right panel shows that, 
 at higher redshift, 
-there is a 20-40\% change in the value of $\hat {r\xi}$.
+there is a 20-40\% change in the value of $\hat {r_\perp\omega}$.
 
-The amplitude of $r\xi$ is amplified due to the stretch of scale.
+The amplitude of $r_\perp\omega$ is amplified due to the stretch of scale.
 As shown in the left panel, the amplitude monotonically increases as a function of redshift.
 But this phenomenon can also appear in case of gravitational growth of structure or increasing of bias,
 so we will not make use of it to do cosmological constraint.
 We utilize the redshift evolution of the 2pCF shape as a signal suggesting that the assumed cosmological parameters are wrong.
 
 In Figure \ref{fig_cosmo} we further plot the redshift evolution of 2pCF in the four wrong cosmologies of Figure \ref{fig_xyquan}.
-In all cases, the scaling leads to evident redshift evolution of the shape of $r\xi$.
+In all cases, the scaling leads to evident redshift evolution of the shape of $r_\perp\omega$.
 When the cosmologies $\Omega_m=0.4,w=-1$ and $\Omega_m=0.26,w=-0.5$ are adopted,
 the compression of structure makes the clustering patterns appears on smaller scales.
-This leads to ``steeper'' slope of $r\xi$, 
+This leads to ``steeper'' slope of $r_\perp\omega$, 
 and the higher the redshift, the steeper the slope.
 To the opposite, when adopting the cosmologies $\Omega_m=0.15,w=-1$ and $\Omega_m=0.26,w=-1.5$,
 the stretch of size makes the slope shallower at higher redshfits.
@@ -496,10 +544,10 @@ the stretch of size makes the slope shallower at higher redshfits.
 
 \subsection{Systematic effects}
 
-The same as \cite{Li2014,Li2015,Li2016} we need to correct for the redshift evolution of $r\xi$ caused by effects other than the cosmological effect.
+The same as \cite{Li2014,Li2015,Li2016} we need to correct for the redshift evolution of $r_\perp\omega$ caused by effects other than the cosmological effect.
 
 Figure \ref{fig_diffz} already shows that, the growth of structure, especially in low redshift and on non-linear scales, 
-changes the shape of $r\xi$ and caused relative enhancement on $r\lesssim2 h^{-1}\rm Mpc$.
+changes the shape of $r_\perp\omega$ and caused relative enhancement on $r\lesssim2 h^{-1}\rm Mpc$.
 So we limit the region of scale to $r>5h^{-1}\rm Mpc$ to minimize its effect.
 
 Galaxies are biased tracers of dark matter field, 
@@ -514,7 +562,7 @@ while the shape of the 2pCF remains less affected (middle panel).
 Compared with the sample with mass cut $M>3\times 10^{11} M_{\odot}$,
 samples with mass limit $3\times 10^{11} M_{\odot}$, $3\times 10^{11} M_{\odot}$ and $3\times 10^{11} M_{\odot}$
 have the amplitude of 2pCFs enhanced by $10\%,\ 50\%$ and $100\%$,
-while the change in $\hat{r\xi}$ is only $0.5\%,\ 2\%$ and $4\%$.
+while the change in $\hat{r_\perp\omega}$ is only $0.5\%,\ 2\%$ and $4\%$.
 Considering the very large change in the mass cut,
 the change in the shape of 2pCF is not significant.
 
@@ -537,7 +585,7 @@ and measure the angular 2pCF.
 The left panel shows that the amplitude of measured 2pCF is enhanced by $\sim 10\%$ in case of considering the RSD effect on spliting samples.
 The middle panel shows that the shape of 2pCF is also altered -- the slop is suppressed.
 If looking at the redshift evolution,
-the curves $\hat{r\xi} - \hat{r\xi}(z=0)$ displayed in the right panel,
+the curves $\hat{r_\perp\omega} - \hat{r_\perp\omega}(z=0)$ displayed in the right panel,
 they changed a lot compared with the case of no RSD effect (the right panel of Figure \ref{fig_diffz}),
 but do not become much larger. %But RSD effect does not introduce large redshfit evolution, although the shape of  is 
 
@@ -579,20 +627,20 @@ One shall construct mock surveys with the above effects included for the correct
 We build up a likelihood function to 
 describe how significant is the redshift evolution of the 2pCF shape,
 so that to determine whether the adopted cosmological parameters are correct.
-The redshift evolution is characterized by the difference between the $\hat{r\xi}$ measured in the lowest redshift and higher ones;
-the cosmology having least redshift evolution of $\hat{r\xi}$ is considered to be the most plausible one and has smallest $\chi^2$.
+The redshift evolution is characterized by the difference between the $\hat{r_\perp\omega}$ measured in the lowest redshift and higher ones;
+the cosmology having least redshift evolution of $\hat{r_\perp\omega}$ is considered to be the most plausible one and has smallest $\chi^2$.
 So we have
 \begin{equation}\label{eq:chisq1}
 \chi^2\equiv \sum_{i=2}^{n_{z}} \sum_{j_1=1}^{n_{r}} \sum_{j_2=1}^{n_{r}} {\bf p}(z_i,r_{j_1}) ({\bf Cov}_{i}^{-1})_{j_1,j_2}  {\bf p}(z_i,r_{j_2}),
 \end{equation}
 where $n_z$ is the number of redshifts, 
-is number of bins in $\hat{r\xi(r)}$;
+is number of bins in $\hat{r_\perp\omega(r)}$;
 in this analysis we have five redshift bins, 
 and 35 $r$ bins with bin width $1h^{-1}\rm Mpc$ in the range $5h^{-1}{\rm Mpc}<r<40h^{-1}{\rm Mpc}$.
 ${\bf p}(z_i,r_{j})$ is the redshift evolution of clustering, 
-$\hat {r\xi}$, with systematic effects subtracted
+$\hat {r_\perp\omega}$, with systematic effects subtracted
 \begin{eqnarray}\label{eq:bfp}
- {\bf p}(z_i,r_{j}) \equiv&\ \delta \hat{r\xi}(z_i,z_1,r_j) - \delta \hat{r\xi}_{\rm sys}(z_i,z_1,r_j)
+ {\bf p}(z_i,r_{j}) \equiv&\ \delta \hat{r_\perp\omega}(z_i,z_1,r_j) - \delta \hat{r_\perp\omega}_{\rm sys}(z_i,z_1,r_j)
 \end{eqnarray}
 ${\bf Cov}_i$ is the covariance matrix.
 
@@ -604,12 +652,12 @@ The covariance matrix is also estimated from these 2pCFs.
 
 In real observations we observe {\it different} objects at different redshfit shells.
 To mimick this when calculating the redshift evolution of 2pCF we use subsamples at different positions at different redshfits.
-E.g., if for the $z=0$ snapshot we use the $\hat{r\xi}$ measured in the subsample $0h^{-1}{\rm Mpc}<Z<105 h^{-1}{\rm Mpc}$,
-at higher redshifts we adopt the $\hat{r\xi}$ measured in a subsample $105h^{-1}{\rm Mpc}<Z<210 h^{-1}{\rm Mpc}$,
-and take the difference between them to get $\delta \hat{r\xi}$.
+E.g., if for the $z=0$ snapshot we use the $\hat{r_\perp\omega}$ measured in the subsample $0h^{-1}{\rm Mpc}<Z<105 h^{-1}{\rm Mpc}$,
+at higher redshifts we adopt the $\hat{r_\perp\omega}$ measured in a subsample $105h^{-1}{\rm Mpc}<Z<210 h^{-1}{\rm Mpc}$,
+and take the difference between them to get $\delta \hat{r_\perp\omega}$.
 So we are always comparing 2pCF measured from different samples of galaxies.
 If simply comparing the 2pCF of a same sample of galaxies at different redshifts, 
-one would significantly underestimate the statistical undertainty of $\delta \hat{r\xi}$ by ignoring the cosmic variance
+one would significantly underestimate the statistical undertainty of $\delta \hat{r_\perp\omega}$ by ignoring the cosmic variance
 \footnote{The error bars displayed in all figures are estimated from the 120 subsamples and for the error bar of redshift evolution of 2pCF 
 we always take the cosmic variance into consideration.}.
 %estimated from the 72 sets of PSB mock galaxies identified from HR3 N-body simulation.
@@ -622,8 +670,8 @@ the compression of structure rescale large scale clustering patterns into small 
 the compression becomes more significant at higher redshift.
 In these cosmologies we get 2pCFs with steeper slope and, the higher redshift, the steeper.
 For $\Omega_m=0.15,w=-1$ and $\Omega_m=0.26,w=-1.5$,
-the stretch of structure leads to shallower slope of $\hat{r\xi}$ and, the higher the redshift, the shallower.
-In all cosmologies we find significant detection of redshift evolution of $\hat{r\xi}$ (in the lowest panels, $\delta \hat{r\xi}\neq0$).
+the stretch of structure leads to shallower slope of $\hat{r_\perp\omega}$ and, the higher the redshift, the shallower.
+In all cosmologies we find significant detection of redshift evolution of $\hat{r_\perp\omega}$ (in the lowest panels, $\delta \hat{r_\perp\omega}\neq0$).
 We computed the $\chi^2$ values according to Equation \ref{eq:chisq1} and found these sets of cosmological parameters are strongly disfacored 
 at $\gtrsim30\sigma$ CL.
 
@@ -662,7 +710,7 @@ The result is displayed in Figure \ref{fig_contours}.
    %\includegraphics[width=7cm]{Tpcf--contour.eps}
    %\includegraphics[width=16cm]{Tpcf--contour-others.eps}
    %\includegraphics[width=16cm,natwidth=52,natheight=40]{fig10.eps}
-   %\includegraphics[width=16cm]{fig10.eps}
+   \includegraphics[width=16cm]{fig9.eps}
    }
    \caption{\label{fig9.eps}
    Likelihood contours (68.3\%, 95.4\%) in the $\Omega_m-w$ plane from our method.
