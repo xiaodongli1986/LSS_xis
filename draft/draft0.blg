@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: draft0.aux
+White space in argument---line 9 of file draft0.aux
+ : \citation{some
+ :                reference}
+I'm skipping whatever remains of this command
+White space in argument---line 10 of file draft0.aux
+ : \citation{some
+ :                reference}
+I'm skipping whatever remains of this command
+White space in argument---line 28 of file draft0.aux
+ : \citation{komatsu
+ :                   2011}
+I'm skipping whatever remains of this command
+The style file: apsrev4-1.bst
+Database file #1: draft0Notes.bib
+Warning--I didn't find a database entry for "Li2014"
+Warning--I didn't find a database entry for "Li2015"
+Warning--I didn't find a database entry for "Li2016"
+Warning--I didn't find a database entry for "Riess1998"
+Warning--I didn't find a database entry for "Perl1999"
+Warning--I didn't find a database entry for "Weinberg"
+Warning--I didn't find a database entry for "Li2011"
+Warning--I didn't find a database entry for "DHW2013"
+Warning--I didn't find a database entry for "Ballinger1996"
+Warning--I didn't find a database entry for "Matsubara1996"
+Warning--I didn't find a database entry for "Marinoni2010"
+Warning--I didn't find a database entry for "Ryden1995"
+Warning--I didn't find a database entry for "LavausWandelt1995"
+Warning--I didn't find a database entry for "Outram2004"
+Warning--I didn't find a database entry for "Blake2011"
+Warning--I didn't find a database entry for "ChuangWang2012"
+Warning--I didn't find a database entry for "Reid2012"
+Warning--I didn't find a database entry for "Beutler2013"
+Warning--I didn't find a database entry for "Linder2013"
+Warning--I didn't find a database entry for "2014arXiv1407.2257S"
+Warning--I didn't find a database entry for "Jeong2014"
+Warning--I didn't find a database entry for "Sutter2014"
+Warning--I didn't find a database entry for "2014ApJ...781...96L"
+Warning--I didn't find a database entry for "Alam2016"
+Warning--I didn't find a database entry for "Beutler2016"
+Warning--I didn't find a database entry for "Sanchez2016"
+Warning--I didn't find a database entry for "Qingqing2016"
+Warning--I didn't find a database entry for "PS1974"
+Warning--I didn't find a database entry for "VL1996"
+Warning--I didn't find a database entry for "topology"
+Warning--I didn't find a database entry for "horizonrun"
+Warning--I didn't find a database entry for "hr4"
+Warning--I didn't find a database entry for "hong2016"
+Warning--I didn't find a database entry for "jiang2008"
+Warning--I didn't find a database entry for "zehavi2011"
+Warning--I didn't find a database entry for "FOG"
+Warning--I didn't find a database entry for "1993ApJ...412...64L"
+Warning--I didn't find a database entry for "Salvador2014"
+Warning--I didn't find a database entry for "Salvador2016"
+Warning--I didn't find a database entry for "Hartlap"
+Warning--I didn't find a database entry for "Bayesian"
+Warning--I didn't find a database entry for "LB2002"
+control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+(There were 3 error messages)

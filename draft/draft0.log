@@ -1,0 +1,577 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.16)  17 SEP 2016 14:36
+entering extended mode
+**./draft0.tex
+(draft0.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(D:\xiaodongli\MiKTeX\tex\latex\emulateapj\emulateapj.cls
+Document Class: emulateapj 
+\bibbaselineskip=\skip41
+(D:\xiaodongli\MiKTeX\tex\latex\revtex\revtex4-1.cls
+Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
+ex4/ for documentation)
+ Copyright (c) 2009 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
+. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 308.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
+\eqncolsep=\skip42
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 433.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
+Class revtex4-1 Info: Making \typeout \long on input line 2046.
+ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
+\c@affil=\count81
+\c@collab=\count82
+\absbox=\box27
+ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
+. Baxter web at superscript.com)]
+\c@linecount=\count83
+\output@latex=\toks14
+\box@size@1=\box28
+\box@size@2=\box29
+\@protection@box=\box30
+\@topmark@saved=\toks15
+\footins@saved=\box31
+\footins@recovered=\box32
+\column@recovered=\box33
+\pagesofar=\box34
+\footsofar=\box35
+\pagegrid@col=\count84
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5578.
+\c@part=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@subparagraph=\count90
+\abovecaptionskip=\skip43
+\belowcaptionskip=\skip44
+\c@figure=\count91
+\fbox@1=\box36
+\c@table=\count92
+\fbox@2=\box37
+\c@video=\count93
+\fbox@4=\box38
+\@bibdataout=\write3
+\widetext@top=\box39
+\widetext@bot=\box40
+
+Class revtex4-1 Warning: No Society specified, using default society aps.
+
+(D:\xiaodongli\MiKTeX\tex\latex\revtex\aps4-1.rtx
+File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
+mentation)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
+)
+
+Class revtex4-1 Warning: No journal specified, using default pra.
+
+Class revtex4-1 Info: APS journal PRA selected on input line 7545.
+
+Class revtex4-1 Warning: No type size specified, using default 10.
+
+(D:\xiaodongli\MiKTeX\tex\latex\revtex\aps10pt4-1.rtx
+File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+documentation)
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+)
+(D:\xiaodongli\MiKTeX\tex\latex\textcase\textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(D:\xiaodongli\MiKTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(D:\xiaodongli\MiKTeX\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
+
+(D:\xiaodongli\MiKTeX\tex\latex\revtex\revsymb4-1.sty
+Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
+or documentation)
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
+))
+(D:\xiaodongli\MiKTeX\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(D:\xiaodongli\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\xiaodongli\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(D:\xiaodongli\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\xiaodongli\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(D:\xiaodongli\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(D:\xiaodongli\MiKTeX\tex\latex\graphics-def\pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(D:\xiaodongli\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(D:\xiaodongli\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+))
+(D:\xiaodongli\MiKTeX\tex\latex\tools\longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip47
+\LTright=\skip48
+\LTpre=\skip49
+\LTpost=\skip50
+\LTchunksize=\count96
+\LTcapwidth=\dimen104
+\LT@head=\box41
+\LT@firsthead=\box42
+\LT@foot=\box43
+\LT@lastfoot=\box44
+\LT@cols=\count97
+\LT@rows=\count98
+\c@LT@tables=\count99
+\c@LT@chunks=\count100
+\LT@p@ftn=\toks18
+)
+(D:\xiaodongli\MiKTeX\tex\latex\epsf\epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen105
+\epsfframethickness=\dimen106
+\epsfrsize=\dimen107
+\epsftmp=\dimen108
+\epsftsize=\dimen109
+\epsfxsize=\dimen110
+\epsfysize=\dimen111
+\pspoints=\dimen112
+)
+\c@front@matter@foot@note=\count101
+\alt@affil@toks=\toks19
+\alt@affil@toks@count=\toks20
+\keys@width=\skip51
+\c@lastfootnote=\count102
+\c@remember@figure@num=\count103
+\c@remember@table@num=\count104
+\bibindent=\dimen113
+\plot@width=\skip52
+\c@table@save=\count105
+\table@note@skip=\skip53
+\deluxe@table@width=\skip54
+\@d@t@a=\skip55
+\c@deluxe@table@num=\count106
+\abovedeluxetableskip=\skip56
+\belowdeluxetableskip=\skip57
+\lastrowheight=\dimen114
+\DT@p@ftn=\toks21
+\pt@column=\count107
+\pt@ncol=\count108
+) (D:\xiaodongli\MiKTeX\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen115
+\enit@toks=\toks22
+\enit@inbox=\box45
+\enitdp@description=\count109
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 78.
+Class revtex4-1 Info: Patching longtable package on input line 78.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 78.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 78.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 78.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 78.
+ (draft0.aux)
+\openout1 = `draft0.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+
+(D:\xiaodongli\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen116
+\scratchbox=\box46
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen117
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks24
+) (D:\xiaodongli\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(D:\xiaodongli\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(D:\xiaodongli\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(D:\xiaodongli\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(D:\xiaodongli\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\openout3 = `draft0Notes.bib'.
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 179.
+
+(D:\xiaodongli\MiKTeX\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 179.
+
+(D:\xiaodongli\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 179.
+
+(D:\xiaodongli\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package natbib Warning: Citation `BB2012' on page 1 undefined on input line 245
+.
+
+
+Package natbib Warning: Citation `Sanchez2006' on page 1 undefined on input lin
+e 250.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 303.
+
+
+(D:\xiaodongli\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 303.
+Package epstopdf Info: Source file: <fig1_a.eps>
+(epstopdf)                    date: 2016-09-16 17:06:54
+(epstopdf)                    size: 90260 bytes
+(epstopdf)             Output file: <fig1_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:24:26
+(epstopdf)                    size: 52629 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig1_a-eps-converted-to.pdf
+ fig1_a.eps>
+(epstopdf)             \includegraphics on input line 315.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig1_a-eps-converted-to.pdf, id=18, 578.16pt x 578.16pt>
+File: fig1_a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig1_a-eps-converted-to.pdf>
+Package pdftex.def Info: fig1_a-eps-converted-to.pdf used on input line 315.
+(pdftex.def)             Requested size: 227.61641pt x 227.62204pt.
+Package epstopdf Info: Source file: <fig1_b.eps>
+(epstopdf)                    date: 2016-09-16 17:06:54
+(epstopdf)                    size: 56739 bytes
+(epstopdf)             Output file: <fig1_b-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:24:27
+(epstopdf)                    size: 32305 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig1_b-eps-converted-to.pdf
+ fig1_b.eps>
+(epstopdf)             \includegraphics on input line 316.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig1_b-eps-converted-to.pdf, id=19, 578.16pt x 650.43pt>
+File: fig1_b-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig1_b-eps-converted-to.pdf>
+Package pdftex.def Info: fig1_b-eps-converted-to.pdf used on input line 316.
+(pdftex.def)             Requested size: 214.97449pt x 241.84842pt.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 390--398
+[]\OT1/cmr/m/n/10 The mis-estimation of an-gu-lar size,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 390--398
+\OT1/cmr/m/n/10 of Fig-ure 1[]. All cos-molo-gies, $[]\OML/cmm/m/it/10 =[]$
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 453--460
+\OT1/cmr/m/n/10 scale is cor-rectly es-ti-mated in five red-shifts. The
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 453--460
+\OT1/cmr/m/n/10 there is an ar-tif-i-cal scal-ing of scales in the con-
+ []
+
+[3 <./fig1_a-eps-converted-to.pdf> <./fig1_b-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig2.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 7164599 bytes
+(epstopdf)             Output file: <fig2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:24:56
+(epstopdf)                    size: 36492682 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig2-eps-converted-to.pdf f
+ig2.eps>
+(epstopdf)             \includegraphics on input line 495.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig2-eps-converted-to.pdf, id=120, 1300.86pt x 1626.075pt>
+File: fig2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig2-eps-converted-to.pdf>
+Package pdftex.def Info: fig2-eps-converted-to.pdf used on input line 495.
+(pdftex.def)             Requested size: 455.24408pt x 569.06035pt.
+Package epstopdf Info: Source file: <fig3.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 242322 bytes
+(epstopdf)             Output file: <fig3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:24:59
+(epstopdf)                    size: 61471 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig3-eps-converted-to.pdf f
+ig3.eps>
+(epstopdf)             \includegraphics on input line 538.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig3-eps-converted-to.pdf, id=121, 1300.86pt x 505.89pt>
+File: fig3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig3-eps-converted-to.pdf>
+Package pdftex.def Info: fig3-eps-converted-to.pdf used on input line 538.
+(pdftex.def)             Requested size: 512.1496pt x 199.17207pt.
+Package epstopdf Info: Source file: <fig3_b.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 236491 bytes
+(epstopdf)             Output file: <fig3_b-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:25:01
+(epstopdf)                    size: 59177 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig3_b-eps-converted-to.pdf
+ fig3_b.eps>
+(epstopdf)             \includegraphics on input line 539.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig3_b-eps-converted-to.pdf, id=122, 1300.86pt x 505.89pt>
+File: fig3_b-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig3_b-eps-converted-to.pdf>
+Package pdftex.def Info: fig3_b-eps-converted-to.pdf used on input line 539.
+(pdftex.def)             Requested size: 512.1496pt x 199.17207pt.
+ [4] [5 <./fig2-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 635.
+
+[6 <./fig3-eps-converted-to.pdf> <./fig3_b-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig4_a.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 94876 bytes
+(epstopdf)             Output file: <fig4_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:25:03
+(epstopdf)                    size: 32556 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig4_a-eps-converted-to.pdf
+ fig4_a.eps>
+(epstopdf)             \includegraphics on input line 744.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig4_a-eps-converted-to.pdf, id=306, 1156.32pt x 505.89pt>
+File: fig4_a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig4_a-eps-converted-to.pdf>
+Package pdftex.def Info: fig4_a-eps-converted-to.pdf used on input line 744.
+(pdftex.def)             Requested size: 455.24408pt x 199.16435pt.
+Package epstopdf Info: Source file: <fig4_b.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 217939 bytes
+(epstopdf)             Output file: <fig4_b-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:25:05
+(epstopdf)                    size: 61158 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig4_b-eps-converted-to.pdf
+ fig4_b.eps>
+(epstopdf)             \includegraphics on input line 745.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig4_b-eps-converted-to.pdf, id=307, 1300.86pt x 505.89pt>
+File: fig4_b-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig4_b-eps-converted-to.pdf>
+Package pdftex.def Info: fig4_b-eps-converted-to.pdf used on input line 745.
+(pdftex.def)             Requested size: 455.24408pt x 177.04099pt.
+
+Underfull \hbox (badness 1281) in paragraph at lines 771--781
+$[][]$ \OT1/cmr/m/n/10 is the co-vari-ance ma-trix es-ti-mated from the
+ []
+
+[7]
+Package epstopdf Info: Source file: <fig5.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 509236 bytes
+(epstopdf)             Output file: <fig5-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:25:09
+(epstopdf)                    size: 102059 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig5-eps-converted-to.pdf f
+ig5.eps>
+(epstopdf)             \includegraphics on input line 816.
+Package epstopdf Info: Output file is already uptodate.
+ <fig5-eps-converted-to.pdf, id=313, 1156.32pt x 1300.86pt>
+File: fig5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig5-eps-converted-to.pdf>
+Package pdftex.def Info: fig5-eps-converted-to.pdf used on input line 816.
+(pdftex.def)             Requested size: 512.1496pt x 576.15158pt.
+Package epstopdf Info: Source file: <fig9.eps>
+(epstopdf)                    date: 2016-09-16 17:06:55
+(epstopdf)                    size: 31263 bytes
+(epstopdf)             Output file: <fig9-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-16 20:25:10
+(epstopdf)                    size: 15841 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig9-eps-converted-to.pdf f
+ig9.eps>
+(epstopdf)             \includegraphics on input line 843.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig9-eps-converted-to.pdf, id=314, 722.7pt x 578.16pt>
+File: fig9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig9-eps-converted-to.pdf>
+Package pdftex.def Info: fig9-eps-converted-to.pdf used on input line 843.
+(pdftex.def)             Requested size: 455.24408pt x 364.19861pt.
+ [8 <./fig4_a-eps-converted-to.pdf> <./fig4_b-eps-converted-to.pdf>] [9 <./fig5
+-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 881.
+
+[10 <./fig9-eps-converted-to.pdf>]
+
+Package natbib Warning: Multiple citation on page 11: same authors and year
+(natbib)                without distinguishing extra letter,
+(natbib)                appears as question mark.
+
+Missing character: There is no ƒ in font cmr8!
+Missing character: There is no ± in font cmr8!
+[11]
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no Å in font cmr8!
+
+No file draft0.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[12] (draft0.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) ) 
+Here is how much of TeX's memory you used:
+ 5019 strings out of 493334
+ 68506 string characters out of 3142271
+ 153732 words of memory out of 3000000
+ 8470 multiletter control sequences out of 15000+200000
+ 14415 words of font info for 58 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,29p,671b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/xiaodong
+li/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/xiaodongli/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmcsc10.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmex10.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/xiaod
+ongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/xiaodongli/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/xiaodon
+gli/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/xiaodongli/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+<D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/xiaodongli/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/xiaodongli/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
+><D:/xiaodongli/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/xiaodongli/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><D:/xiaodongli/MiKTeX/fonts/typ
+e1/public/amsfonts/symbols/msam10.pfb>
+Output written on draft0.pdf (12 pages, 37219761 bytes).
+PDF statistics:
+ 593 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
