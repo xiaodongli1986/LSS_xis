@@ -255,55 +255,63 @@ and the shape of 2pCF and power spectrum \citep{Sanchez2006,Sanchez2009}.
 
 
 
-In \cite{Li2014,Li2015,Li2016} we proposed a series of methods to probe the geometric information encoded in the LSS data.
-We make use of the fact that the AP or volume effect commonly introduce redshift-dependent geometric distorion in the LSS,
-which can be distinguished from the other effects such as the redshfit space distortion (RSD).
-RSD arises because the radial distances of galaxies are inferred from redshifts which is contaminated by the pecular motion of galaxies, 
-leading to apparent anisotropy even if the adopted cosmology is correct \citep{Ballinger1996}.
-RSD is the usually main caveats for probe geometry using LSS,
-and we found it can be largerly avoid by focusing on the the redshift dependence of the anisotropy.
+In \cite{Li2014,Li2015,Li2016} we developed a novel strategy to probe $D_A$ and $H$ from LSS data.
+%proposed a series of methods to probe the geometric information encoded in the LSS data.
+We found fact that the AP or volume effect in general introduces a geometric distortion significantly evolves with redshift;
+this phenomenon can be utilized to distinguish the the from the other effects such as the redshift space distortion (RSD).
+The radial distances of galaxies are inferred from the measured redshifts which are distorted by the peculiar motion of galaxies, 
+leading to apparent distortion in the redshift space galaxy distribution \citep{FOG,Kaiser1987,Ballinger1996}.
+It is the major systematic effects limiting our ability to probe the geometry of LSS from galaxy distribution.
+We found its influence is significantly reduced in case of studying the redshift dependence of the distortion.
 
-\cite{Li2014} proposed used the {\it galaxy density gradient field} 
-to characterize the anisotropies in LSS and tested the idea on Horizon Run 3 (HR3) N-body simulations \citep{horizonrun},
-showing the redsift evolution of the gardient field can be used to infer unbiased constraints cosmological parameters and is insensitive to RSD.
-The same topic was revisited in \cite{Li2015}, but using the statistical tool of {\it galaxy two-point correlation function} (2pCF) as a function of angle, $\xi(\mu)$.
-When incorrect cosmological parameters are adopted, the shape of $\xi(\mu)$ appears anisotropic due to the AP effect, 
-and the amplitude is shifted by the change in comoving volume;
+\cite{Li2014} attempted to use the {\it galaxy density gradient field} 
+to characterize the redshift evolution of the LSS distortion. 
+We tested the idea on Horizon Run 3 (HR3) N-body simulations \citep{horizonrun},
+showing the redshift evolution of the statistical property of the gradient field 
+can be used to infer unbiased constraints cosmological parameters and is insensitive to RSD.
+The same topic was revisited in \cite{Li2015}, 
+using the statistical tool of {\it galaxy two-point correlation function} (2pCF) as a function of angle, $\xi(\mu)$, 
+where $\mu\equiv \cos \theta$ and $\theta$ is the direction between the connection of the galaxy pairs and the direction.
+When incorrect cosmological parameters are adopted, 
+the shape of $\xi(\mu)$ is altered due to the anisotropic shape of the LSS (the AP effect), 
+and the amplitude is shifted due to the change in the size of comoving volume;
 both effects have significant redshift dependence.
-The RSD effect, although significantly distorting $\xi(\mu)$, 
-exhibits much less redshift evolution compared to the effect coming from incorrectly adopted cosmologies.
-The method was applied to BOSS DR12 galaxies \citep{Li2016} to probe the redshift dependent of AP effect and lead to tight cosmological constraints.
+The RSD effect, although {\it very significantly} distorts $\xi(\mu)$, 
+exhibits less redshift evolution.
+The method was applied to BOSS DR12 galaxies \citep{Li2016} to probe the redshift dependent of the AP effect, 
+and we come up with tight cosmological constraints comparable to the mainstream probes of SNIa, BAO, CMB and so on.
 
-We developed a method measuring the redshift of the shape of galaxy angular correlation function to constrain cosmology.
-A wrongly adopted cosmology result in redshift-dependent mis-scaling in the constructed galaxy distribution,
-which leads to redshift-dependent change in the angular 2pCF shape.
-The signal is sensitive to the adopted cosmological parameters and relatively insensitive to the gravitational growth of structure,
+In this paper we continue our exploration of our strategy and presented 
+a new method using the redshift of the shape of {\it galaxy angular 2pCF} as a function of radial scale, $\omega(r_{\bot})$,
+to constrain cosmology.
+A wrongly adopted cosmology result in {\it redshift-dependent mis-scaling} of the galaxy distribution,
+which leads to redshift-evolution of the shape of $\omega(r_{\bot})$.
+The signal is sensitive to the cosmological parameters and relatively insensitive to the other effects such as the gravitational growth of structure,
 the galaxy bias, and the RSD effect.
-We test our method on the HR4 mock galaxies having hundreds of million galaxies at redshfits 0-2.
-Analyzing redshift evolution of the shape of 2pCF on scales $5 - 40 h^{-1} {\rm Mpc}$, we derive tight constraints on $\Omega_m$ and $w$.
-
+We apply our method to the HR4 mock galaxies having hundreds of million galaxies at redshfits 0-2
+and develop the statistical procedure to constrain cosmological parameters.
  
 
-In this paper we continue our series of work and probe to use the angular correlation function as a statistical tool to probing the volume effect in the angular direction.
+%In this paper we continue our series of work and probe to use the angular correlation function as a statistical tool to probing the volume effect in the angular direction.
 %The method of redshift dependent AP effect has been shown great power to constrain cosmological parameters \cite{Li2014,Li2015,Li2015}.
 %We hope this method also.
 %The two methods probe different information encoded in the 2pCF and can be combined to fully probe the geometrical effect in LSS.
 %Or one can also use the redshift evolution of 2D 2pCF xi(s,mu) to have all information included.
 %We developed a method measuring the redshift of the shape of galaxy angular correlation function, $\hat \omega_{r_\perp}$, to constrain cosmology.
-A wrongly adopted cosmology result in redshift-dependent mis-scaling in the constructed galaxy distribution,
-which shifts apparent scale of the clustering patterns;
-this manifests itself as a redshift-dependent rescaling of the measured angular correlation function.
-We find this signal is sensitive to the adopted cosmological parameters and relatively insensitive to the gravitational growth of structure,
-the galaxy bias, and the RSD effect.
-We test our method on the HR4 mock galaxies.
-The method can be applied to current and future LSS surveys,
-especially, the photometric surveys such as DES and LSST which probe a large amount of galaxies and the large redshift error will not quite affect the angular 2pCF measurement.
+%A wrongly adopted cosmology result in redshift-dependent mis-scaling in the constructed galaxy distribution,
+%which shifts apparent scale of the clustering patterns;
+%this manifests itself as a redshift-dependent rescaling of the measured angular correlation function.
+%We find this signal is sensitive to the adopted cosmological parameters and relatively insensitive to the gravitational growth of structure,
+%the galaxy bias, and the RSD effect.
+%We test our method on the HR4 mock galaxies.
+%The method can be applied to current and future LSS surveys,
+%especially, the photometric surveys such as DES and LSST which probe a large amount of galaxies and the large redshift error will not quite affect the angular 2pCF measurement.
 
 The outline of this paper proceeds as follows. 
-In \S 2 we briefly review the nature and consequences of the geometric distortion in LSS when performing coordinate transforms in a cosmological context. 
-In \S 3 we describe the mock galaxies produced from N-body simulations which are used to test our methodology.
+In \S 2 we briefly review the nature and consequences of the LSS geometric distortion when performing coordinate transforms in a cosmological context. 
+In \S 3 we describe the N-body mock galaxies used to test our method.
 The methodology is presented in \S 4.
-We conclude in \S 6.
+We conclude in \S 5.
 
 
 
