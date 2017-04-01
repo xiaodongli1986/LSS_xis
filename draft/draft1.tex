@@ -102,14 +102,9 @@ the galaxy angular 2-point correlation function}
 %$^{\dagger}$xiaodongli@kias.re.kr\\
 %$\star$Corresponding Author: ***@kasi.re.kr}
 
-\author{Xiao-Dong Li, }
+\author{Xiao-Dong Li, Changbom Park, }
 \affil{School of Physics, Korea Institute for Advanced Study, 85 Heogiro, Dongdaemun-gu, Seoul 130-722, Korea}
-\author{Cheng Cheng, }
-\affil{Kavli Institute for Theoretical Physics China, Institute of Theoretical Physics, Chinese Academy of Sciences, Zhong Guan Cun Street 55\#, Beijing, 100190, P.R. China}
-\affil{University of Chinese Academy of Sciences, P.R. China}
-\author{Changbom Park,}
-\affil{School of Physics, Korea Institute for Advanced Study, 85 Heogiro, Dongdaemun-gu, Seoul 130-722, Korea}
-\author{Hyunbae Park, Cristiano G. Sabiu, }
+\author{Cristiano G. Sabiu, Hyunbae Park, }
 \affil{Korea Astronomy and Space Science Institute, Daejeon 305-348, Korea}
 %\author{David H. Weinberg,}
 %\affil{Department of Astronomy and CCAPP, The Ohio State University, 140 West 18th Avenue, Columbus, OH 43210, USA}
@@ -118,6 +113,9 @@ the galaxy angular 2-point correlation function}
 %University Park, PA 16802 }
 %\affil{Institute for Gravitation and the Cosmos, The Pennsylvania State University, 
 %University Park, PA 16802 }
+\author{Cheng Cheng, }
+\affil{Kavli Institute for Theoretical Physics China, Institute of Theoretical Physics, Chinese Academy of Sciences, Zhong Guan Cun Street 55\#, Beijing, 100190, P.R. China}
+\affil{University of Chinese Academy of Sciences, P.R. China}
 \author{Juhan Kim\altaffilmark{1},}
 \affil{Center for Advanced Computation, Korea Institute for Advanced Study, 85 Hoegi-ro, Dongdaemun-gu, Seoul 130-722, Korea}
 \affil{School of Physics, Korea Institute for Advanced Study, 85 Heogiro, Dongdaemun-gu, Seoul 130-722, Korea}
@@ -129,7 +127,7 @@ the galaxy angular 2-point correlation function}
 %\altaffiltext{2}{cbp@kias.re.kr}
 %\altaffiltext{3}{csabiu@kasi.re.kr}
 %\altaffiltext{4}{\bf Hyunbae: your email}
-\altaffiltext{1}{Corresponding Author: kjhan@kias.re.kr}
+\altaffiltext{1}{Corresponding Author: Cris, Add your email!!!}
 
 % \email{xiaodongli@kias.re.kr}
 % \email{cbp@kias.re.kr}
@@ -172,27 +170,29 @@ the galaxy angular 2-point correlation function}
 
 \begin{abstract}
 We propose to use the redshift dependence of the galaxy angular 2-point correlation function (2pCF)
-for a purpose of cosmological constraints.
-When an incorrect cosmological model is assumed for the coordinate transformation from redshift space to comoving space, 
+to constrain cosmological parameters.
+When an incorrect set of parameters is assumed for the coordinate transformation from redshift space to comoving space, 
 it produces {\it redshift-dependent mis-scaling} in the constructed galaxy distribution.
 As a result, we observe a redshift-dependent rescaling of the measured galaxy angular 2pCF.
-We test our method on the HR4 mock galaxies having hundreds of millions of galaxies at redshifts 
-$0\leq z\leq2$.
-We find the redshift evolution of shape of angular 2pCF, as a function of scale,
-is sensitive to the adopted cosmological parameters,
-and is relatively insensitive to the gravitational growth of structure,
+We test our method on the Horizon Run 4 N-body simulation snapshot data, 
+which contains hundreds of millions of galaxies at redshifts 
+0, 0.5, 1, 1.5 and 2
+We find the shape of angular 2pCF, as a function of scale,
+exhibits evident redshift evolution when an incorrect set of cosmological parameters adopted,
+and is relatively insensitive to the other effects such as gravitational growth of structure,
 the galaxy bias, and the redshift-space distortion.
 Analyzing the 2pCF shape on scales $5  h^{-1} {\rm Mpc} \leq r_\perp \leq 40 h^{-1} {\rm Mpc}$, 
 we derive tight constraints on $\Omega_m$ and $w$ with 68.3\% CL uncertainties of 0.015 and 0.05.
 %Our method is complementary to current works using 2pCF to constrain cosmological parameters.
 The method could be applicable to future large scale structure surveys, especially the photometric surveys such as DES, LSST, 
 to derive tight cosmological constraints.
-This work is a continuation of our previous works \citep{Li2014,Li2015,Li2016}
-as a strategy to constraining cosmological parameters based on some nearly redshift-invariant physical quantity;
-they are all powerful in constraining cosmology and have a lot of merit,
-e.g., are less affected by the systematic effects introduced by non-linear clustering or RSD,
+This work is a continuation of our previous works \cite{Li2014,Li2015,Li2016},
+which use a strategy to constraining cosmological parameters based on some redshift-invariant physical quantity;
+they have a lot of merit,
+e.g., lead to powerful constraints, are less affected by the systematic effects introduced by non-linear clustering or RSD,
 do not require accurate analytical modeling of the galaxy correlation function,
-and are applicable on relatively small clustering scales.
+are applicable on relatively small clustering scales,
+and are applicable to many future LSS surveys.
 \end{abstract}
 
 %% Keywords should appear after the \end{abstract} command. The uncommented
@@ -269,7 +269,7 @@ and the shape of 2pCF and power spectrum \citep{Sanchez2006,Sanchez2009}.
 
 
 
-In \cite{Li2014,Li2015,Li2016} we developed a novel strategy to probe $D_A$ and $H$ from LSS data.
+In \cite{Li2014,Li2015,Li2016} we developed a novel strategy to probe $D_A$ and $H$ from the LSS data.
 %proposed a series of methods to probe the geometric information encoded in the LSS data.
 We found that the AP or volume effect in general introduces a geometric distortion that evolves significantly with redshift;
 this phenomenon can be utilized to distinguish the AP effect from the other effects, such as the redshift-space distortion (RSD).
@@ -293,7 +293,7 @@ both effects have significant redshift dependence.
 Although the RSD effect significantly distorts $\xi(\mu)$, 
 it exhibits much less redshift evolution.
 The method was applied to BOSS DR12 galaxies \citep{Li2016} to probe the redshift dependence of the AP effect, 
-and we arrive at tight cosmological constraints comparable to mainstream probes of SNIa, BAO, CMB.
+and we arrive at tight cosmological constraints competitive with mainstream probes of SNIa, BAO, CMB.
 
 In this paper we continue our exploration of this strategy and presented 
 a new method using the redshift of the shape of the {\it galaxy angular 2pCF} as a function of radial scale, $\omega(r_{\bot})$,
@@ -465,13 +465,13 @@ As an illustration, Figure \ref{fig_scatter} displays the 2D distribution of a s
 with $x$, $y$ coordinates computed using the ``correct'' cosmological parameters $\Omega_m=0.26,\ w=-1$ (left panels) 
 and a set of wrong cosmological parameters $\Omega_m=0.05,\ w=-1.5$ (right panels), respectively.
 
-\scr{When the correct cosmology is adopted the cosmic scale is correctly estimated,
+When the correct cosmology is adopted the cosmic scale is correctly estimated,
 the main factor leads to redshift evolution of galaxy distribution is the gravitational growth of structure.
 With decreasing redshift, we clearly see the clusters and filaments form and grow.
 On the other hand, when the wrong cosmology is adopted, there is an artificial scaling of distances in the constructed map.
 The separations among galaxies are over-estimated by 
 $25.6\%,47.3\%,62.2\%,71.7\%$ at redshifts of $0.5,1.0,1.5,2.5$,
-leading to a clear redshift evolution of sizes of structures.}
+leading to a clear redshift evolution of sizes of structures.
 
 The growth of structure increases the clustering and results in more compact structures,
 while the volume effect maintains the clustering pattern and uniformly re-scales structures on all scales.
@@ -563,18 +563,23 @@ while the covariances of them are taken to be the covariance matrix (after multi
    \caption{\label{fig_diffz}
   The angular 2pCF ($\omega_{r_\perp}$, left panels), the shape of the angular 2pCF ($\hat{\omega}_{r_\perp}$, middle panels),
   and the evolution with respect to the $z=0$ value ($\hat{\omega}_{r_{\perp}}(z=z_i) - \hat{\omega}_{r_{\perp}}(z=0)$, right panels). 
-  Upper panels show that in the correct cosmology the redshift evolution of the shape of 2pCF is rather small, 
+  Upper panels show that in the correct cosmology the redshift evolution of the shape of 2pCF is rather small regardless of the large redshfit evolution of the amplitude, 
   whereas the lower panels show that, in a wrong cosmology $\Omega_m = 0.05,w=-1.5$, the redshift evolution of $\hat{\omega}_{r_\perp}$ is very significant.
    }
 \end{figure*}
 
 The upper-left panel of Figure \ref{fig_diffz} displays the angular 2pCF measured from HR4 mock galaxies. % (multiplied by scale $r$) in the five snapshot.
 We multiply $\omega$ by the separation $r_\perp$ to have similar size of statistical uncertainty on all scales.
+For convenience we will use the denotation
+\begin{equation}
+ \hat \omega_{r_{\perp}} \equiv r_{\perp} \omega.
+\end{equation}
+
 
 Among different redshifts there is large variation in the amplitude of $\omega(r_\perp)$.
 The amplitude is proportional to the clustering strength, which is affected by the gravitational growth of structures and the galaxy bias.
 The amplitude is highest at $z=0$ where the structures experienced the most growth.
-$\omega(r_\perp)$ also increases with redshift at $z>1$ with increasing redshift 
+$\omega(r_\perp)$ increases at $z>1$ with increasing redshift 
 as a reason of increasing galaxy bias.
 %leading to stronger clustering strength and higher amplitude of 2pCF.
 %On the contrary, at higher redshift we find $\omega(z=2)>\omega(z=1.5)>\omega(z=1)$,
@@ -583,7 +588,7 @@ as a reason of increasing galaxy bias.
 
 Although there is large variation in amplitude between the different redshifts bins, 
 %The shape of $r_\perp\omega$ also evolves with redshift.
-the shape of $r_\perp\omega$  remains similar at all redshifts;
+the shape of $\omega_{r_{\perp}}$  remains similar at all redshifts;
 in general it peaks at $r\sim9 h^{-1}\rm Mpc$ and monotonically drops or increases at larger or smaller scales.
 The only exception is the small enhancement at $r\lesssim 2 h^{-1}\rm Mpc$,
 which is caused by the non-linear growth of structures 
@@ -606,7 +611,7 @@ one can just fit the 2pCF with the theoretical predictions \citep{Salvador2014,S
 instead of using our method 
 (although our method should also be applicable).
 
-In the upper-middle panel, the overlapping of $\hat\omega$
+In the upper-middle panel, the overlapping of $\hat\omega_{r_{\perp}}$
 clearly show the minimal redshift evolution of the shape.
 In the upper-right panel, 
 we further show the residual evolution at high redshifts 
@@ -640,7 +645,7 @@ one would significantly underestimate the statistical uncertainty of $\delta \ha
 
 %In all, we conclude that the shape of the 2pCF is more robust than the amplitude against redshift and galaxy bias.
 
-\subsection{Galaxy angular 2pCF: Cosmological Effect }
+\subsection{Galaxy angular 2pCF: cosmological effect }
 
 The angular 2pCF of galaxy positions constructed in a wrongly assumed cosmology $\Omega_m=0.05,\ w=-1.5$
 is displayed in the lower panels of Figure \ref{fig_diffz}.
@@ -651,6 +656,7 @@ related with the true $\hat \omega$ as
  \hat \omega_{r_\perp,\rm wrong}(r) = \hat \omega_{r_\perp, \rm correct}(\alpha_{\perp} r),
 \end{equation}
 a simple consequence of the fact that the clustering pattern at scale $r$ is rescaled to $\alpha_{\perp} r$.
+
 The redshift evolution of $\alpha_{\perp}$ leads to redshift evolution of 
 $\hat \omega_{r_\perp, \rm correct}$,
 %Lower panels of Figure \ref{fig_diffz} shows the $r_\perp\omega$ in five 
@@ -710,16 +716,16 @@ and exhibit stronger clustering (i.e. larger bias).
 We vary the mass cut and check the effect of galaxy bias on $\hat \omega_{r_\perp}$.
 The upper panels of Figure \ref{fig_sys} displays the 2pCF measured from galaxies within a $3175\times3175\times105$ $(h^{-1}\rm Mpc)^3$ volume, taken from the $z=0$ snapshot.
 Four values of minimal mass limits, $3\times 10^{11} M_{\odot}$, $1\times 10^{12} M_{\odot}$, $4\times 10^{12} M_{\odot}$ and $1\times 10^{13} M_{\odot}$,
-are imposed to create three \scr{four?} samples with different galaxy bias.
+are imposed to create samples with different galaxy bias.
 The measured angular 2pCF are displayed.
 
-Different mass cuts result in large variation in the amplitude of the 2pCF (left panel),
-while the shape of the \scr{normalised} 2pCF remains less affected (middle panel).
+Different mass cuts result in large variation in the amplitude of the 2pCF (left panel);
+but the shape of the \scr{normalised} 2pCF remains less affected (middle panel).
 Compared with the sample of $M>3\times 10^{11} M_{\odot}$,
 samples with mass limits of $1\times 10^{12} M_{\odot}$, $4\times 10^{12} M_{\odot}$ and $1\times 10^{13} M_{\odot}$
-have amplitude of 2pCFs enhanced by $10\%,\ 50\%$ and $100\%$, respectively, 
-while the change in the shape is only $0.5\%,\ 2\%$ and $4\%$.
-The effect of galaxy bias becomes much smaller by utilizing the shape of the 2pCF rather than the amplitude.
+have amplitude of 2pCFs enhanced by $10\%,\ 50\%$ and $100\%$, 
+while the change in the shape is only $0.5\%,\ 2\%$ and $4\%$, respectively.
+The effect of galaxy bias becomes much less significant by utilizing the shape of the 2pCF rather than the amplitude.
 
 \subsubsection{Redshift Space Distortion}
 
@@ -733,7 +739,7 @@ The angular positions of galaxies are not shifted by RSD at all;
 the only effect of RSD enter in the procedure of 
 splitting galaxies into redshift shells.
 The galaxies observed in a survey are split into shells of subsamples, 
-with different redshift ranges, for the 2pCF measurement.
+with different redshift ranges. So that we can get the 2pCF measurement at different redshfits.
 RSD distorts the galaxy redshift and as a result some galaxies 
 (especially those close to the boundaries of shells) are assigned to the wrong redshift shells.
 
@@ -741,18 +747,19 @@ We shift the radial coordinates of galaxies according to the relation
 \begin{equation}\label{eq:zvpeu}
 \Delta z = (1+z) \frac{v_{{\rm Z}}}{c},
 \end{equation}
-where $v_{{\rm Z}}$ (Z is treated as the radial direction in this analysis) 
+where $v_{{\rm Z}}$ (Z is the third coordinate of the galaxy in the box, treated as the radial direction in this analysis) 
 is the galaxy peculiar velocity in the LOS direction.
-This lead to misclassification of some galaxies when we split the box into slices.
+This lead to {\it misclassification} of some galaxies when we split the box into slices.
 %Then we split the whole box into 30 slices with thickness $105h^{-1}\rm Mpc$, 
 %and measure the angular 2pCF.
 
-The lower panel of Figure \ref{fig_sys} shows the RSD effect on the 2pCF.
+The lower panel of Figure \ref{fig_sys} shows how it affects on the 2pCF.
 Comparing this plot with Figure \ref{fig_diffz} one can clearly see the effect of RSD.
 The amplitude of the measured 2pCF is enhanced by $\sim 10\%$ when considering the RSD effect 
 and the slop of $\hat\omega_{r_\perp}$ is suppressed.
-The redshift evolution of $\hat\omega_{r_\perp}$ is still small, remain $\lesssim4\%$ at $0.5\leq z \leq 2$.
-So RSD should not very affect the application of our method as long as it is precisely modeled and corrected.
+But the redshift evolution of $\hat\omega_{r_\perp}$ is still small, remain $\lesssim4\%$ at $0.5\leq z \leq 2$.
+So RSD should not very affect the application of our method as long as its redshift evolution is small;
+the small effect of RSD can be precisely modeled by simulations and corrected.
 %If looking at the redshift evolution,
 %the curves $\hat{r_\perp\omega} - \hat{r_\perp\omega}(z=0)$ displayed in the right panel,
 %they changed a lot compared with the case of no RSD effect (the right panel of Figure \ref{fig_diffz}),
@@ -760,7 +767,7 @@ So RSD should not very affect the application of our method as long as it is pre
 
 Similar to RSD, redshift errors of galaxies
 also results in fuzzy boundaries of shells and misclassification of galaxies.
-This effect should also be properly quantified in real observations.
+This effect should be properly quantified when dealing with real observational data.
 
 %In \cite{Li2014,Li2015,Li2016}, the systematic effects contributing to the redshfit evolution of galaxy clusterings 
 %are modeled in mock surveys and subtracted.
@@ -803,7 +810,7 @@ Thus we proceed to construct a quantitative likelihood estimator.
 The procedure here is very similar to \cite{Li2014,Li2015,Li2016}.
 We compare the high redshift $\hat\omega_{r_\perp}$ and the lowest redshift measurement,
 \begin{equation}
- \delta \hat{r_\perp\omega}(z_i,z_1) \equiv \hat{r_\perp\omega}(z_i) - \hat{r_\perp\omega}(z_1),
+ \delta \hat{\omega_{r_\perp}}(z_i,z_1) \equiv \hat{\omega_{r_\perp}}(z_i) - \hat{\omega_{r_\perp}}(z_1),
 \end{equation}
 and design the likelihood function to quantify
 the redshift evolution of $\hat\omega_{r_\perp}$:
@@ -813,10 +820,10 @@ the redshift evolution of $\hat\omega_{r_\perp}$:
 where $n_z$ is the number of redshifts which is 5 in this analysis, 
 $n_r$ is number of binning in $\hat{\omega}_{r_\perp}(r_\perp)$,
 which is 35 since we have $r_\perp$ bins 
-with width $1h^{-1}\rm Mpc$ in a range of $5h^{-1}{\rm Mpc}\leq r\leq 40h^{-1}{\rm Mpc}$.
+with width $1h^{-1}\rm Mpc$ in a range of $5h^{-1}{\rm Mpc}\leq r_\perp\leq 40h^{-1}{\rm Mpc}$.
 ${\bf p}(z_i,r_{j})$ is the redshift evolution of the angular correlation function shape with systematic effects subtracted
 \begin{eqnarray}\label{eq:bfp}
- {\bf p}(z_i,r_{j}) \equiv&\ \delta \hat{\omega}(z_i,z_1,r_j) - \delta \hat{\omega}_{r_\perp,\rm sys}(z_i,z_1,r_j)
+ {\bf p}(z_i,r_{j}) \equiv&\ \delta \hat{\omega_\perp}(z_i,z_1,r_j) - \delta \hat{\omega}_{r_\perp,\rm sys}(z_i,z_1,r_j)
 \end{eqnarray}
 ${\bf Cov}_i$ is the covariance matrix estimated from the ${\bf p}(z_i,r_{j})$ measured from 120 subsamples.
 %It is difficult to conduct the 2pCF of the whole snapshot box with hundreds of millions of galaxies.
@@ -845,7 +852,7 @@ In the case that one has 2\,000 mocks the rescaling is less than 1.02.
 Figure \ref{fig_cosmo} displays the 2pCF and the likelihood values when adopting 
 the four incorrect cosmologies used in Figure \ref{fig_xyquan}.
 For the cosmologies $\Omega_m=0.4,w=-1$ and $\Omega_m=0.26,w=-0.5$,
-the compression shifts the large scale clustering patterns into small scales
+the compression shifts the clustering patterns into smaller scales
 at higher redshift and make the 2pCFs steeper.
 %and also becomes more significant at higher redshift.
 %We get 2pCFs with steeper slope and the higher redshift the steeper.
@@ -868,8 +875,8 @@ at $\gtrsim30\sigma$ CL.
    }
    \caption{\label{fig_cosmo}
     $\hat{\omega}_{r_\perp}$ (upper panels) and $\hat{\omega}_{r_\perp}(z=z_i) - \hat{\omega}_{r_\perp}(z=0)$ (lower panels) at several redshifts,
-    for the four wrong cosmologies.
-    The redshift evolution of angular 2pCF shape in these wrong cosmologies are detected at high CL.
+    for four wrong cosmologies.
+    The redshift evolution of the angular 2pCF shape in these wrong cosmologies are detected at high CL.
    }
 \end{figure*}
 
@@ -905,17 +912,19 @@ The result is displayed in Figure \ref{fig_contours}.
 
 We obtain tight constraints on the two parameters.
 The 2$\sigma$ contour lies within the region $0.23<\Omega_m<0.285$, $-1.1<w<-0.9$.
-The two parameters are very strongly degenerated with each other.
+The two parameters are very strongly degenerated with each other,
+and the area of constrained region is quite small.
 The thin shape of the contour implies that, 
 when combining with the another observational data with a different direction of degeneracy (e.g. CMB, BAO),
 a very tight combined constraint can be obtained.
+
 In the case of fixing one parameter at its best-fit value and constraining the other,
-one obtains 1$\sigma$ uncertainties of $\delta\Omega_m\approx0.002,\delta w\approx0.01$. 
+one obtains very small 1$\sigma$ uncertainties of $\delta\Omega_m\approx0.002,\delta w\approx0.01$.
 
 
 \section{Concluding Remarks}
  
-We developed a method of measuring the redshift of the shape of the galaxy angular correlation function, $\hat \omega_{r_\perp}$, to constrain cosmology.
+We developed a simple method of measuring the redshift of the shape of the galaxy angular correlation function, $\hat \omega_{r_\perp}$, to constrain cosmology.
 A wrongly adopted cosmology results in redshift-dependent mis-scaling in the constructed galaxy distribution,
 which leads to a redshift-dependent rescaling of $\hat \omega_{r_\perp}(r_\perp)$.
 The signal is sensitive to cosmology and relatively insensitive to the gravitational growth of structure,
@@ -946,6 +955,7 @@ and could be applicable on smaller scales.
 
 \cite{Li2015,Li2016} shows that using the redshift dependence of the AP effect, 
 one can derive very tight cosmological constraint.
+The method presented in this paper studies the redshift evolution of the volume effect.
 %We hope this method also.
 These two methods probe different information encoded in the 2pCF 
 and can be combined to have a complete geometric probe of LSS galaxy distribution.
@@ -953,6 +963,7 @@ and can be combined to have a complete geometric probe of LSS galaxy distributio
 
 This method is designed to be applied to current and future LSS surveys,
 with a particular emphasis to the {\it photometric surveys}.
+The galaxy angular 2pCF in redshift shells is much less affected by the large redshift errors compared wit the 3D 2pCF.
 DES will probe hundreds of millions of galaxies at $z\lesssim1.5$, 
 and LSST will probe tens of billions of galaxies at $z\lesssim2$.
 We expect very tight cosmological constraints from these surveys.
@@ -961,15 +972,15 @@ We expect very tight cosmological constraints from these surveys.
 
 
 Our series of works \cite{Li2014,Li2015,Li2016}, together with this analysis, 
-and also \citep{topology,MS2016},
+and also \cite{topology,MS2016},
 are introducing a new strategy to constrain cosmology from galaxy clustering.
-We seek the statistical pattern which remains constant at all redshifts;
+We utilize a statistical pattern which remains constant at all redshifts;
 this invariance is broken if wrong cosmologies are adopted to construct the galaxy distribution
 and introduces redshift evolution of geometric distortion.
 The systematic effects can be corrected by performing a N-body simulation 
 in a cosmology with values of parameters close enough to the underlying correct one.
 This avoids the difficulty in the analytical modeling the galaxy clustering, galaxy bias and RSD,
-and enables reliable cosmological constraint on scales much smaller than BAO.
+and enables reliable cosmological constraint on relatively small clustering scales.
 We hope these methods play an important role in deriving cosmological constraints from future LSS surveys.
 
  
